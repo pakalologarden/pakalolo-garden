@@ -76,16 +76,20 @@ a { color: inherit; }
   position: relative;
   overflow: hidden;
 }
-.hero::after {
-  content: '✿';
+.hero::before {
+  content: '';
   position: absolute;
-  right: 3rem;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 12rem;
-  color: rgba(90,138,98,0.06);
+  right: 0;
+  bottom: 0;
+  width: 520px;
+  height: 100%;
+  background-image: url('/botanical.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+  opacity: 0.18;
   pointer-events: none;
-  line-height: 1;
+  mix-blend-mode: luminosity;
 }
 .hero-inner { max-width: var(--max-w-article); margin: 0 auto; position: relative; }
 .breadcrumb {
@@ -233,7 +237,7 @@ a { color: inherit; }
   margin-bottom: 1.1rem;
 }
 .hawaii-notes p {
-  color: rgba(244,239,228,0.8) !important;
+  color: rgba(244,239,228,0.8);
   font-size: 0.95rem;
   line-height: 1.8;
   margin-bottom: 1rem;
@@ -492,47 +496,5 @@ footer {
   .nav-links { display: none; }
   .email-form { flex-direction: column; }
   .footer-inner { grid-template-columns: 1fr; gap: 1.5rem; }
-  .hero::after { display: none; }
-}
-
-/* ── BOTANICAL HERO WATERMARK ── */
-.hero {
-  background-image: url('/botanical.png');
-  background-repeat: no-repeat;
-  background-position: right -50px center;
-  background-size: 480px 480px;
-  background-blend-mode: luminosity;
-  opacity-adjustment: 0.08;
-}
-
-.hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: url('/botanical.png');
-  background-repeat: no-repeat;
-  background-position: right 2rem center;
-  background-size: 420px 420px;
-  opacity: 0.12;
-  pointer-events: none;
-  mix-blend-mode: luminosity;
-}
-
-/* Make botanical black background transparent */
-.hero::before {
-  mix-blend-mode: screen !important;
-}
-
-/* ── BOTANICAL HERO WATERMARK ── */
-.hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: url('/botanical.png');
-  background-repeat: no-repeat;
-  background-position: right 2rem center;
-  background-size: 420px 420px;
-  opacity: 0.15;
-  pointer-events: none;
-  mix-blend-mode: luminosity;
+  .hero::before { display: none; }
 }
