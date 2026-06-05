@@ -1,0 +1,114 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+
+const tocItems = [
+  { id: 'why-ph-matters', label: 'Why pH Matters In AutoPots' },
+  { id: 'common-problems', label: 'Common pH Problems' },
+  { id: 'causes', label: 'What Causes pH Drift' },
+  { id: 'fixing', label: 'How To Fix It' },
+  { id: 'prevention', label: 'Prevention' },
+];
+
+const relatedInCluster = [
+  { title: 'How To Buffer Coco', slug: 'how-to-buffer-coco' },
+  { title: 'Pumice vs Perlite', slug: 'pumice-vs-perlite' },
+  { title: 'Understanding VPD', slug: 'understanding-vpd' },
+  { title: 'RO vs Tap Water', slug: 'ro-vs-tap-water' },
+];
+---
+
+<ArticleLayout
+  title="AutoPot pH Problems — Causes and Fixes"
+  description="pH drift in AutoPots is one of the most common and most misdiagnosed problems. Here's what causes it and how to fix it."
+  silo="Equipment & Tools"
+  siloSlug="equipment"
+  tags={['AutoPots', 'pH', 'Coco', 'Troubleshooting']}
+  date="June 2026"
+  tocItems={tocItems}
+  relatedInCluster={relatedInCluster}
+>
+
+  <p class="lead">pH problems in AutoPots almost always trace back to one of three things — unbuffered coco, reservoir management, or tap water. Once you know which one, the fix is straightforward.</p>
+
+  <h2 id="why-ph-matters">Why pH Matters In AutoPots</h2>
+  <p>Cannabis in coco wants pH between 5.8 and 6.2. Outside that range, nutrients lock out even when they're present in the solution. You can have perfect EC and still see deficiencies if pH is off. In AutoPots the plant is continuously drawing from the reservoir — if that reservoir drifts, every feeding is wrong until you catch it.</p>
+
+  <div class="card-grid">
+    <div class="benefit-card">
+      <div class="label">5.8 – 6.0</div>
+      <p>Optimal range for coco. Calcium and magnesium are most available here.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Below 5.5</div>
+      <p>Calcium and magnesium lock out. Plants show deficiency symptoms fast.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Above 6.5</div>
+      <p>Iron, manganese, and zinc become less available. Interveinal chlorosis.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Fluctuation</div>
+      <p>Even cycling between 5.8 and 6.3 stresses plants more than a stable 6.0.</p>
+    </div>
+  </div>
+
+  <hr />
+
+  <h2 id="common-problems">Common pH Problems</h2>
+
+  <h3>pH Drops After Filling Reservoir</h3>
+  <p>You fill the reservoir at 5.9 and check it 24 hours later — it's 5.4. This is almost always caused by microbial activity in the reservoir or nutrient solution reacting with the medium. Check your reservoir for algae or biofilm. Keep it covered and light-free.</p>
+
+  <h3>pH Creeps Up Over Time</h3>
+  <p>pH rising slowly over days usually means the coco is buffering your solution upward — common with unbuffered or partially buffered coco in the first few weeks. It can also mean your tap water has high alkalinity.</p>
+
+  <h3>pH Swings Unpredictably</h3>
+  <p>If pH is all over the place with no pattern, check your pH pen calibration first. A drifting pH pen causes more misdiagnosis than actual pH problems. Calibrate before every grow and weekly during.</p>
+
+  <hr />
+
+  <h2 id="causes">What Causes pH Drift</h2>
+
+  <h3>Unbuffered Coco</h3>
+  <p>The number one cause of early pH instability in AutoPots. Unbuffered coco actively exchanges ions with your nutrient solution, causing pH to swing as the medium stabilizes. Buffer your coco before planting — every time.</p>
+
+  <h3>Tap Water Alkalinity</h3>
+  <p>Tap water contains carbonates and bicarbonates that resist pH adjustment. You can pH it down to 5.9 but it wants to bounce back up. RO water has no alkalinity — it stays where you put it.</p>
+
+  <h3>Nutrient Interactions</h3>
+  <p>Some nutrient lines cause more pH drift than others depending on their buffer chemistry. If you're seeing consistent drift with a specific product, check the manufacturer's recommended pH range — some are formulated for higher ranges than coco wants.</p>
+
+  <h3>Reservoir Temperature</h3>
+  <p>Warm reservoirs accelerate bacterial growth and cause faster pH drift. Keep your reservoir below 70°F. In Hawaii this means keeping it out of direct sun and potentially running a small aquarium chiller if ambient temps are high.</p>
+
+  <hr />
+
+  <h2 id="fixing">How To Fix It</h2>
+
+  <h3>Drain And Refill</h3>
+  <p>If pH has drifted significantly, drain the reservoir completely, flush the medium with properly pH'd water, and refill fresh. Don't try to correct a severely drifted reservoir by adding pH up or down — you end up chasing your tail.</p>
+
+  <h3>Calibrate Your Pen</h3>
+  <p>Before anything else, confirm your pH pen is reading accurately. Use fresh calibration solution — the little packets that come with most pens. If your pen is more than a year old, replace it.</p>
+
+  <h3>Switch To RO</h3>
+  <p>If you're fighting consistent upward pH drift with tap water, switching to RO is the fastest permanent fix. Removes the alkalinity that's causing the bounce-back.</p>
+
+  <hr />
+
+  <h2 id="prevention">Prevention</h2>
+  <p>Buffer your coco. Use RO water. Keep your reservoir covered and below 70°F. Check pH every 2-3 days minimum, daily during the first two weeks of a new grow. Log your readings — patterns tell you what's happening before it becomes a problem.</p>
+
+  <div class="hawaii-notes">
+    <p>Hawaii tap water pH varies by neighborhood and time of year. In Kapolei I've seen tap come out anywhere from 7.2 to 7.8. That's a lot of pH down to get to 5.9, and the alkalinity makes it bounce back fast. I switched to RO full time and the pH stability difference was immediate.</p>
+    <p>Reservoir temperature is also a real issue here. My garage can hit 85°F in summer. I keep my reservoir in the coolest corner of the room and check it daily June through September. A $15 aquarium thermometer in the reservoir is worth it.</p>
+  </div>
+
+  <div class="related-links">
+    <div class="label">AutoPot Guide</div>
+    <ul>
+      <li><a href="/autopot-guide">← Back To The Complete AutoPot Growing Guide</a></li>
+    </ul>
+  </div>
+
+</ArticleLayout>

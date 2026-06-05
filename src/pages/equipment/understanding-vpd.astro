@@ -1,0 +1,101 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+
+const tocItems = [
+  { id: 'what-is-vpd', label: 'What Is VPD?' },
+  { id: 'why-it-matters', label: 'Why It Matters' },
+  { id: 'vpd-ranges', label: 'VPD Ranges By Stage' },
+  { id: 'measuring', label: 'How To Measure VPD' },
+  { id: 'dialing-in', label: 'Dialing It In' },
+];
+
+const relatedInCluster = [
+  { title: 'How To Buffer Coco', slug: 'how-to-buffer-coco' },
+  { title: 'AutoPot pH Problems', slug: 'autopot-ph-problems' },
+  { title: 'Pumice vs Perlite', slug: 'pumice-vs-perlite' },
+  { title: 'RO vs Tap Water', slug: 'ro-vs-tap-water' },
+];
+---
+
+<ArticleLayout
+  title="Understanding VPD For Cannabis"
+  description="VPD is the single most important environmental metric for indoor cannabis. Here's what it is, why it matters, and how to dial it in."
+  silo="Equipment & Tools"
+  siloSlug="equipment"
+  tags={['VPD', 'Environment', 'AutoPots', 'Indoor Growing']}
+  date="June 2026"
+  tocItems={tocItems}
+  relatedInCluster={relatedInCluster}
+>
+
+  <p class="lead">When VPD is right, plants stop fighting their environment and start growing. Leaves pray upward, transpiration runs efficiently, nutrients move freely. When it's wrong, everything slows down — and it looks like a dozen other problems.</p>
+
+  <h2 id="what-is-vpd">What Is VPD?</h2>
+  <p>Vapor Pressure Deficit is the difference between the amount of moisture in the air and the maximum amount the air could hold at that temperature. It's a measure of how thirsty the air is.</p>
+  <p>High VPD means dry air that pulls moisture aggressively from the leaf surface. Low VPD means humid air that barely pulls at all. Plants regulate water and nutrient movement through transpiration — VPD determines how fast or slow that happens.</p>
+
+  <h2 id="why-it-matters">Why It Matters</h2>
+  <p>Transpiration is how plants move water and dissolved nutrients from roots to leaves. When VPD is optimized, transpiration runs at the right rate — nutrients get delivered efficiently, stomata stay open, CO2 gets absorbed, growth accelerates.</p>
+  <p>Too high VPD and plants close their stomata to prevent moisture loss — growth stops, heat stress increases. Too low and transpiration slows to a crawl — nutrient uptake drops, mold risk increases, plants get lazy.</p>
+
+  <div class="card-grid">
+    <div class="benefit-card">
+      <div class="label">Too High</div>
+      <p>Stomata close. Plants stress. Growth slows. Looks like heat stress or nutrient problems.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Too Low</div>
+      <p>Transpiration crawls. Nutrient uptake drops. Mold risk rises. Plants look soft and slow.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Dialed In</div>
+      <p>Leaves pray. Growth accelerates. Nutrients move efficiently. Plants look healthy and vigorous.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">AutoPots</div>
+      <p>Consistent VPD amplifies AutoPot benefits — steady transpiration pulls from the reservoir evenly.</p>
+    </div>
+  </div>
+
+  <hr />
+
+  <h2 id="vpd-ranges">VPD Ranges By Stage</h2>
+
+  <h3>Seedling / Clone — 0.4 to 0.8 kPa</h3>
+  <p>Young plants and clones without established root systems need low VPD. They can't replace moisture fast enough if VPD is high. Keep humidity up and temps moderate.</p>
+
+  <h3>Vegetative — 0.8 to 1.2 kPa</h3>
+  <p>As roots develop, plants can handle more transpiration demand. Gradually increase VPD through veg to build transpiration capacity before flower.</p>
+
+  <h3>Early Flower — 1.0 to 1.5 kPa</h3>
+  <p>Flower transition is a good time to push VPD up. Plants are vigorous and roots are established. Higher transpiration drives nutrient uptake during the stretch.</p>
+
+  <h3>Late Flower — 1.5 to 2.0 kPa</h3>
+  <p>Lower humidity in late flower reduces mold risk in dense canopies. Higher VPD is acceptable because plants are mature and roots are fully developed.</p>
+
+  <hr />
+
+  <h2 id="measuring">How To Measure VPD</h2>
+  <p>You need temperature and relative humidity at the leaf surface — not at the sensor on the wall. Leaf temperature is typically 2-3°F below air temperature, which matters for accurate VPD calculation.</p>
+  <p>The AC Infinity Controller AI+ calculates VPD automatically from its temperature and humidity sensors. For manual calculation, use a VPD chart or calculator — input leaf temp and air RH and it gives you kPa.</p>
+
+  <hr />
+
+  <h2 id="dialing-in">Dialing It In</h2>
+  <p>Start with temperature. Get your canopy temp where you want it — 75-82°F for most strains in veg, 70-78°F in flower. Then adjust humidity to hit your target VPD for the stage. Temperature is the anchor, humidity is the dial.</p>
+  <p>In AutoPots, stable VPD creates stable transpiration which creates stable reservoir draw. The system works best when environment is consistent — VPD swings create irregular feeding patterns that show up as uneven growth.</p>
+
+  <div class="hawaii-notes">
+    <p>Hawaii outdoor RH regularly hits 75-85% especially during wet season. That's VPD of 0.3-0.5 kPa at typical temps — way too low for flower. Running a dehumidifier isn't optional here, it's the difference between growing and failing.</p>
+    <p>My setup: AC Infinity Controller AI+ handles everything automatically. I set VPD targets by stage and it adjusts fan speed, dehumidifier, and humidifier to maintain them. Best investment I've made in environmental control — stops the daily manual adjustment loop entirely.</p>
+    <p>One Hawaii-specific note: trade winds in summer can drop indoor RH fast if you're exchanging air with outside. Watch for VPD spikes on windy days when the inline fan is pulling dry outside air in. The controller catches it but it's worth knowing the pattern.</p>
+  </div>
+
+  <div class="related-links">
+    <div class="label">AutoPot Guide</div>
+    <ul>
+      <li><a href="/autopot-guide">← Back To The Complete AutoPot Growing Guide</a></li>
+    </ul>
+  </div>
+
+</ArticleLayout>

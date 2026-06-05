@@ -1,0 +1,87 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+
+const tocItems = [
+  { id: 'what-is-pumice', label: 'What Is Pumice?' },
+  { id: 'what-is-perlite', label: 'What Is Perlite?' },
+  { id: 'comparison', label: 'Side By Side' },
+  { id: 'autopots', label: 'Why Pumice Wins In AutoPots' },
+  { id: 'ratio', label: 'What Ratio To Use' },
+];
+
+const relatedInCluster = [
+  { title: 'How To Buffer Coco', slug: 'how-to-buffer-coco' },
+  { title: 'AutoPot pH Problems', slug: 'autopot-ph-problems' },
+  { title: 'Understanding VPD', slug: 'understanding-vpd' },
+  { title: 'RO vs Tap Water', slug: 'ro-vs-tap-water' },
+];
+---
+
+<ArticleLayout
+  title="Pumice vs Perlite — Which Is Better For AutoPots?"
+  description="Both add aeration to coco but they behave completely differently in a bottom-fed system. Here's why pumice wins in AutoPots."
+  silo="Equipment & Tools"
+  siloSlug="equipment"
+  tags={['Pumice', 'Perlite', 'Coco', 'AutoPots']}
+  date="June 2026"
+  tocItems={tocItems}
+  relatedInCluster={relatedInCluster}
+>
+
+  <p class="lead">Perlite floats. That's the whole problem. In a hand-watered system it doesn't matter much — but in an AutoPot where water rises from the bottom, perlite migrates to the top of the pot and stops doing its job. Pumice stays put.</p>
+
+  <h2 id="what-is-pumice">What Is Pumice?</h2>
+  <p>Pumice is volcanic glass — a naturally occurring porous rock formed when lava cools rapidly and gas bubbles get trapped inside. It's heavy enough to stay in place, porous enough to hold some moisture, and inert enough to not affect pH or nutrient chemistry. It doesn't break down over time.</p>
+
+  <h2 id="what-is-perlite">What Is Perlite?</h2>
+  <p>Perlite is also volcanic glass but processed differently — heated until it pops like popcorn, creating a very light, very porous material. It's excellent at adding air pockets to soil and coco. The problem is that lightness. Perlite floats in water, which means in any bottom-fed system it ends up where you don't want it.</p>
+
+  <hr />
+
+  <h2 id="comparison">Side By Side</h2>
+
+  <div class="card-grid">
+    <div class="benefit-card">
+      <div class="label">Pumice — Weight</div>
+      <p>Heavy enough to stay distributed throughout the medium. Doesn't migrate.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Perlite — Weight</div>
+      <p>Very light. Floats to the surface during bottom watering. Concentrates at top.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Pumice — Porosity</div>
+      <p>Holds some moisture while maintaining air pockets. Buffers moisture swings.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Perlite — Porosity</div>
+      <p>Highly porous but holds less moisture than pumice. Better for drainage.</p>
+    </div>
+  </div>
+
+  <hr />
+
+  <h2 id="autopots">Why Pumice Wins In AutoPots</h2>
+  <p>AutoPots bottom feed through an AQUAvalve — water rises from the tray into the medium. Every time the valve opens and water enters, lighter particles get pushed upward. Over weeks of bottom feeding, perlite accumulates at the top of the pot where it does nothing for root zone oxygenation.</p>
+  <p>Pumice is dense enough that bottom feeding doesn't move it. Your 70/30 coco/pumice mix stays 70/30 from top to bottom for the entire grow cycle. Consistent aeration throughout the root zone, not just at the surface.</p>
+  <p>There's also a practical benefit — pumice doesn't create the white crusty mess on the surface that perlite does. Cleaner looking grow, easier to monitor the medium surface for moisture and pests.</p>
+
+  <hr />
+
+  <h2 id="ratio">What Ratio To Use</h2>
+  <p>For AutoPots in coco I run 70% buffered coco to 30% pumice by volume. That ratio gives you enough coco for moisture retention and nutrient capacity, with enough pumice for root zone oxygen and drainage.</p>
+  <p>Some growers go 80/20 for slightly more moisture retention — useful if you're in a dry environment or running larger pots that dry out faster. I've tried both and prefer 70/30 for the AutoPot XL in Hawaii's humidity.</p>
+
+  <div class="hawaii-notes">
+    <p>Finding pumice in Hawaii is easier than you'd think — most hydroponic shops carry it, and it's available on Amazon with Prime delivery to Kapolei. I order the 1/4 inch size. Avoid the fine grades — too small and it can clog the AirDome ports.</p>
+    <p>One thing I noticed switching from perlite to pumice — the medium surface stays consistently moist for longer, which initially made me think I was overwatering. I wasn't. The pumice was holding moisture more evenly throughout the pot instead of the top drying out fast. Took about a week to recalibrate how I read the medium.</p>
+  </div>
+
+  <div class="related-links">
+    <div class="label">AutoPot Guide</div>
+    <ul>
+      <li><a href="/autopot-guide">← Back To The Complete AutoPot Growing Guide</a></li>
+    </ul>
+  </div>
+
+</ArticleLayout>

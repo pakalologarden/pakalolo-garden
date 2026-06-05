@@ -1,0 +1,92 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+
+const tocItems = [
+  { id: 'the-difference', label: 'The Difference' },
+  { id: 'tap-water', label: 'Tap Water' },
+  { id: 'ro-water', label: 'RO Water' },
+  { id: 'hawaii', label: 'Hawaii Water Quality' },
+  { id: 'recommendation', label: 'My Recommendation' },
+];
+
+const relatedInCluster = [
+  { title: 'How To Buffer Coco', slug: 'how-to-buffer-coco' },
+  { title: 'AutoPot pH Problems', slug: 'autopot-ph-problems' },
+  { title: 'Pumice vs Perlite', slug: 'pumice-vs-perlite' },
+  { title: 'Understanding VPD', slug: 'understanding-vpd' },
+];
+---
+
+<ArticleLayout
+  title="RO vs Tap Water For Cannabis"
+  description="Tap water works but RO gives you full control. Here's when it matters and when it doesn't."
+  silo="Equipment & Tools"
+  siloSlug="equipment"
+  tags={['RO Water', 'pH', 'Coco', 'AutoPots']}
+  date="June 2026"
+  tocItems={tocItems}
+  relatedInCluster={relatedInCluster}
+>
+
+  <p class="lead">Tap water isn't bad. But it's inconsistent — EC varies by season, alkalinity fights your pH adjustments, and chlorine can affect the biology you're trying to build. RO removes all of that and gives you a clean starting point every time.</p>
+
+  <h2 id="the-difference">The Difference</h2>
+  <p>Tap water contains dissolved minerals, carbonates, bicarbonates, chlorine, and sometimes chloramine — all added or present from the source. The mineral content varies by location and season. EC can range from 0.1 to 0.8 depending on where you live.</p>
+  <p>Reverse osmosis water pushes tap through a membrane that removes 95-99% of dissolved solids. What comes out is essentially pure water with an EC near 0 and no alkalinity. You build the nutrient profile from scratch, every time, exactly how you want it.</p>
+
+  <hr />
+
+  <h2 id="tap-water">Tap Water</h2>
+  <p>Tap works fine for outdoor living soil grows where the biology buffers fluctuations and you're not dialing in precise nutrient ratios. Many outdoor growers never touch RO and produce excellent results.</p>
+  <p>For indoor coco in AutoPots, tap water creates two specific problems. First, the alkalinity — carbonates and bicarbonates that resist pH adjustment and cause bounce-back. Second, the inconsistency — you're starting from a different baseline every time you fill the reservoir, which makes dialing in EC harder.</p>
+
+  <div class="card-grid">
+    <div class="benefit-card">
+      <div class="label">Tap — Cost</div>
+      <p>Free from the faucet. No equipment needed. Works immediately.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">RO — Cost</div>
+      <p>$30-150 for a basic filter. Ongoing filter replacement every 6-12 months.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Tap — Control</div>
+      <p>Variable EC and alkalinity. pH adjustment fights bounce-back from carbonates.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">RO — Control</div>
+      <p>EC starts at 0. No alkalinity. pH stays where you put it. Full control.</p>
+    </div>
+  </div>
+
+  <hr />
+
+  <h2 id="ro-water">RO Water</h2>
+  <p>The main advantage of RO is consistency. Every reservoir fill starts from the same baseline — zero EC, no alkalinity, neutral-ish pH. You add exactly what you want and nothing else.</p>
+  <p>For coco in AutoPots this matters because you're building a precise nutrient solution that the plant draws from continuously. Tap water variables compound over time in a bottom-fed system — RO eliminates them.</p>
+  <p>One thing to remember with RO — because it strips everything, you need to add cal-mag back. Pure RO water with no cal-mag will cause calcium deficiency fast in coco. Always add cal-mag first before other nutrients when mixing RO solution.</p>
+
+  <hr />
+
+  <h2 id="hawaii">Hawaii Water Quality</h2>
+  <p>Hawaii municipal water quality varies significantly by island and neighborhood. Honolulu Board of Water Supply publishes annual water quality reports — worth reading for your specific area.</p>
+  <p>Generally Hawaii tap EC runs 0.3-0.5 which is moderate. The bigger issue is pH — Hawaii tap often comes out 7.2-7.8 which requires significant pH down to reach 5.9, and the alkalinity causes bounce-back within 24 hours in the reservoir.</p>
+
+  <hr />
+
+  <h2 id="recommendation">My Recommendation</h2>
+  <p>Use RO for indoor AutoPot grows. The investment is $30-50 for a basic under-sink filter and it solves pH instability, EC inconsistency, and chlorine in one shot. Outdoor living soil — tap is fine, the biology handles it.</p>
+
+  <div class="hawaii-notes">
+    <p>I run a basic 5-stage RO filter under the sink in the grow room. Fills a 5-gallon jug in about 20 minutes. Cost me $45 on Amazon. The pH stability difference switching from Kapolei tap to RO was immediate and obvious — went from chasing pH daily to checking it every 3 days.</p>
+    <p>One Hawaii note: RO filters work based on water pressure. If your home water pressure is low — common in some Oahu neighborhoods — RO production slows way down. Check your pressure before buying. Most filters need at least 40 PSI to work efficiently.</p>
+  </div>
+
+  <div class="related-links">
+    <div class="label">AutoPot Guide</div>
+    <ul>
+      <li><a href="/autopot-guide">← Back To The Complete AutoPot Growing Guide</a></li>
+    </ul>
+  </div>
+
+</ArticleLayout>
