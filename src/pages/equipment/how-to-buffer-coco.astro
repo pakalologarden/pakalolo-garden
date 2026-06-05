@@ -1,0 +1,122 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+
+const tocItems = [
+  { id: 'what-is-buffering', label: 'What Is Buffering?' },
+  { id: 'why-autopots', label: 'Why It Matters In AutoPots' },
+  { id: 'what-you-need', label: 'What You Need' },
+  { id: 'process', label: 'The Process' },
+  { id: 'mistakes', label: 'Common Mistakes' },
+];
+
+const relatedInCluster = [
+  { title: 'AutoPot pH Problems', slug: 'autopot-ph-problems' },
+  { title: 'Pumice vs Perlite', slug: 'pumice-vs-perlite' },
+  { title: 'Understanding VPD', slug: 'understanding-vpd' },
+  { title: 'RO vs Tap Water', slug: 'ro-vs-tap-water' },
+];
+---
+
+<ArticleLayout
+  title="How To Buffer Coco Properly"
+  description="Unbuffered coco will rob your plants of calcium from day one. Here's exactly how to buffer coco before you fill your AutoPots."
+  silo="Equipment & Tools"
+  siloSlug="equipment"
+  tags={['Coco', 'AutoPots', 'Buffering', 'Cal Mag']}
+  date="June 2026"
+  tocItems={tocItems}
+  relatedInCluster={relatedInCluster}
+>
+
+  <p class="lead">Skipping the buffer is the most common mistake new coco growers make. Raw coco will aggressively pull calcium out of your nutrient solution before your roots ever see it. Buffer first. Always.</p>
+
+  <h2 id="what-is-buffering">What Is Buffering?</h2>
+  <p>Coco coir is made from coconut husks. During processing it gets loaded with sodium and potassium ions in the cation exchange sites — the spots where nutrients bind. When you pour a cal-mag solution through unbuffered coco, those sites grab the calcium and release sodium instead. Your plants get sodium. Not ideal.</p>
+  <p>Buffering means flushing those exchange sites with a calcium-magnesium solution before planting so the coco is pre-loaded with cal-mag. After buffering, nutrients go to your roots instead of getting locked up in the medium.</p>
+
+  <h2 id="why-autopots">Why It Matters In AutoPots</h2>
+  <p>In hand-watered systems you might get away with partial buffering because you're flushing regularly. In AutoPots you're bottom feeding into a reservoir — the coco sits in nutrient solution continuously. Unbuffered coco in an AutoPot will rob calcium for weeks, causing deficiencies that look like pH problems or light stress. It's neither. It's the coco.</p>
+
+  <div class="card-grid">
+    <div class="benefit-card">
+      <div class="label">Calcium Uptake</div>
+      <p>Buffered coco delivers calcium to roots instead of locking it up in the medium.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Stable pH</div>
+      <p>Pre-loaded exchange sites mean less pH instability in the first two weeks.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Clean Start</div>
+      <p>Removes excess sodium and potassium from the manufacturing process.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Faster Roots</div>
+      <p>Plants establish faster when the medium isn't competing with their nutrient uptake.</p>
+    </div>
+  </div>
+
+  <hr />
+
+  <h2 id="what-you-need">What You Need</h2>
+  <p>The process is simple. You need cal-mag, pH-adjusted water, and time.</p>
+
+  <h3>Cal-Mag Solution</h3>
+  <p>Mix cal-mag at full label dose — typically 5ml/gallon — in pH-adjusted water. Target pH 5.8-6.0. EC doesn't need to be high, you're just loading the exchange sites not feeding plants.</p>
+
+  <h3>Water Source</h3>
+  <p>RO water is ideal because it gives you a clean starting EC of 0. Tap water works but adds variables. In Hawaii tap EC varies significantly — I've measured 0.3-0.5 in Honolulu depending on season. RO removes that uncertainty.</p>
+
+  <h3>Container</h3>
+  <p>A large tub, bucket, or tray that can hold your coco fully submerged. You want the cal-mag solution saturating the entire block or bag of coco.</p>
+
+  <hr />
+
+  <h2 id="process">The Process</h2>
+
+  <h3>Step 1 — Rinse First</h3>
+  <p>Before buffering, rinse the raw coco with plain pH-adjusted water to remove loose salts and debris from manufacturing. Don't skip this — some brands are saltier than others.</p>
+
+  <h3>Step 2 — Mix Buffer Solution</h3>
+  <p>Mix cal-mag at full dose in enough water to fully saturate your coco. For a single 5kg brick that's usually 5-10 gallons depending on how compressed it is when hydrated.</p>
+
+  <h3>Step 3 — Soak</h3>
+  <p>Pour the cal-mag solution over the coco and let it soak for a minimum of 8 hours. Overnight is better. I usually do 24 hours. You want those exchange sites fully loaded before anything touches the root zone.</p>
+
+  <h3>Step 4 — Drain</h3>
+  <p>Drain the coco thoroughly after soaking. Don't rinse with plain water after buffering — you'll undo the work. Just drain and it's ready to use.</p>
+
+  <h3>Step 5 — Fill And Plant</h3>
+  <p>Fill your AutoPot pots with the buffered coco. Don't compress it. You want good structure for root expansion and oxygen flow — especially if you're running AirDomes.</p>
+
+  <hr />
+
+  <h2 id="mistakes">Common Mistakes</h2>
+
+  <h3>Using Plain Water To Buffer</h3>
+  <p>Water alone doesn't load the exchange sites with calcium. It just rinses. You need cal-mag in the solution to actually buffer.</p>
+
+  <h3>Not Soaking Long Enough</h3>
+  <p>A quick 30-minute soak does almost nothing. The cation exchange process takes time. Minimum 8 hours, 24 is better.</p>
+
+  <h3>Rinsing After Buffering</h3>
+  <p>Rinsing with plain water after buffering pulls calcium back out of the exchange sites. Drain only — no rinse.</p>
+
+  <h3>Skipping It On Reused Coco</h3>
+  <p>If you're reusing coco from a previous run, buffer again. The exchange sites get depleted over a grow cycle and previous salt buildup needs flushing before the next run.</p>
+
+<div class="hawaii-notes">
+  <p>My exact process: Nutrifield Coco Mega Brick — RHP certified, pre-washed. Non-negotiable on the pre-washed. Don't cheap out here.</p>
+  <p>10 gallons of RO water pH'd to 5.8-6.0. 150ml of cal-mag. That's 15ml per gallon — strong buffer, intentional. I want those exchange sites completely saturated before anything goes near a root.</p>
+  <p>Soak overnight minimum. Drain. Fill pots. No rinsing after. Done.</p>
+  <p>Hawaii humidity note: don't let buffered wet coco sit open overnight. Bag it or plant same day. Learned that one the hard way.</p>
+</div>
+
+  <div class="related-links">
+    <div class="label">AutoPot Guide</div>
+    <ul>
+      <li><a href="/autopot-guide">← Back To The Complete AutoPot Growing Guide</a></li>
+    </ul>
+  </div>
+
+</ArticleLayout>

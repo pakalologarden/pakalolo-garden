@@ -85,9 +85,9 @@ a { color: inherit; }
   height: 100%;
   background-image: url('/botanical.png');
   background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: contain;
-  opacity: 0.18;
+  background-position: right center;
+  background-size: 380px auto;
+  opacity: 0.10;
   pointer-events: none;
   mix-blend-mode: luminosity;
 }
