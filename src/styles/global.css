@@ -517,3 +517,22 @@ footer {
   pointer-events: none;
   mix-blend-mode: luminosity;
 }
+
+/* Make botanical black background transparent */
+.hero::before {
+  mix-blend-mode: screen !important;
+}
+
+/* ── BOTANICAL HERO WATERMARK ── */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/botanical.png');
+  background-repeat: no-repeat;
+  background-position: right 2rem center;
+  background-size: 420px 420px;
+  opacity: 0.15;
+  pointer-events: none;
+  mix-blend-mode: luminosity;
+}
