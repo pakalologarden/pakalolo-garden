@@ -1,17 +1,75 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro';
 
+const silos = [
+  { name: 'KNF', slug: 'knf', desc: 'Korean Natural Farming inputs, recipes, and field trials from Hawaii.' },
+  { name: 'Living Soil', slug: 'living-soil', desc: 'Building and maintaining living soil in a tropical climate.' },
+  { name: 'Deficiencies', slug: 'deficiencies', desc: 'Diagnosing and fixing cannabis deficiencies from the ground up.' },
+  { name: 'Hawaii Growing', slug: 'hawaii-growing', desc: 'Oahu-specific conditions, climate challenges, and 329 education.' },
+  { name: 'Concentrates', slug: 'concentrates', desc: 'Live resin, rosin, diamonds, sauce — explained without the hype.' },
+  { name: 'Grow Journal', slug: 'grow-journal', desc: 'Real grow logs. What worked. What didn\'t.' },
+  { name: 'Breeding', slug: 'breeding', desc: 'F1s, backcrosses, phenohunting, and seed projects in progress.' },
+  { name: 'Equipment', slug: 'equipment', desc: 'AutoPots, pH pens, VPD, and the tools that actually matter.' },
+];
 ---
+<BaseLayout
+  title="Hawaii Growing Resource — KNF, Living Soil & Home Cultivation"
+  description="Real growing notes from Hawaii. KNF recipes, living soil builds, cannabis deficiencies, AutoPots, breeding, and 329 education from an Oahu grower."
+>
+  <div class="hero" style="padding-bottom: 5rem;">
+    <div class="hero-inner">
+      <div class="breadcrumb" style="color: var(--gold); letter-spacing: 0.2em;">
+        ✿ &nbsp; HAWAII GROW JOURNAL
+      </div>
+      <h1>Growing Notes<br /><em>From Hawaii</em></h1>
+      <p class="hero-sub">
+        Real field notes on KNF, living soil, coco, AutoPots, breeding, and home cultivation.
+        Written from an Oahu garden. No hype. No guru tone. Just what happened.
+      </p>
+      <div class="meta-row">
+        <span class="meta-tag">KNF</span>
+        <span class="meta-tag">Living Soil</span>
+        <span class="meta-tag">329 Education</span>
+        <span class="meta-tag">Oahu</span>
+      </div>
+    </div>
+  </div>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+  <div class="hibiscus-divider">✿ &nbsp; ✿ &nbsp; ✿</div>
+
+  <div style="max-width: var(--max-w); margin: 0 auto; padding: 3rem 2rem;">
+    <div style="margin-bottom: 2rem;">
+      <span style="font-family: var(--font-mono); font-size: 0.58rem; text-transform: uppercase; letter-spacing: 0.18em; color: var(--gold);">Content Clusters</span>
+      <h2 style="font-family: var(--font-display); font-weight: 500; font-size: 2rem; color: var(--forest); margin-top: 0.5rem;">Everything In The Garden</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem;">
+      {silos.map(silo => (
+        <a href={`/${silo.slug}`} style="text-decoration: none;">
+          <div style="background: white; border: 1px solid var(--border); border-top: 2px solid var(--gold); padding: 1.5rem; border-radius: 2px; height: 100%;">
+            <div style="font-family: var(--font-mono); font-size: 0.58rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--gold); margin-bottom: 0.5rem;">✿</div>
+            <h3 style="font-family: var(--font-display); font-weight: 500; font-size: 1.4rem; color: var(--forest); margin-bottom: 0.5rem;">{silo.name}</h3>
+            <p style="font-size: 0.85rem; color: var(--muted); line-height: 1.6; margin: 0;">{silo.desc}</p>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+
+  <div style="background: var(--forest); padding: 5rem 2rem; margin-top: 2rem; text-align: center;">
+    <div style="max-width: 520px; margin: 0 auto;">
+      <div style="font-family: var(--font-mono); font-size: 0.58rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--gold); margin-bottom: 1rem;">✿ &nbsp; FROM THE GARDEN</div>
+      <h2 style="font-family: var(--font-display); font-weight: 500; font-size: 2.5rem; color: var(--cream); margin-bottom: 1rem; line-height: 1.15;">
+        Get Weekly <em style="font-style: italic; color: var(--sage-light);">Grow Notes</em>
+      </h2>
+      <p style="font-size: 0.95rem; color: rgba(244,239,228,0.55); line-height: 1.7; margin-bottom: 2rem;">
+        I share what I'm testing, what's working, what's failing, and what I'm learning about KNF, living soil, coco, AutoPots, breeding, and home cultivation in Hawaii.
+      </p>
+      <div class="email-form" style="max-width: 420px; margin: 0 auto;">
+        <input type="email" placeholder="your@email.com" />
+        <button type="button">Subscribe</button>
+      </div>
+      <p style="font-family: var(--font-mono); font-size: 0.55rem; color: rgba(244,239,228,0.2); margin-top: 1rem; letter-spacing: 0.08em;">No spam. Unsubscribe anytime.</p>
+    </div>
+  </div>
+
+</BaseLayout>

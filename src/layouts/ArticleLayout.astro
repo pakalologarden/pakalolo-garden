@@ -1,0 +1,81 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  silo: string;
+  siloSlug: string;
+  tags: string[];
+  date: string;
+  tocItems?: { id: string; label: string }[];
+  relatedInCluster?: { title: string; slug: string }[];
+}
+const { title, description, silo, siloSlug, tags, date, tocItems = [], relatedInCluster = [] } = Astro.props;
+import BaseLayout from './BaseLayout.astro';
+---
+<BaseLayout title={title} description={description}>
+
+  <div class="hero">
+    <div class="hero-inner">
+      <div class="breadcrumb">
+        <a href={`/${siloSlug}`} style="color: inherit; text-decoration: none;">{silo}</a>
+        <span>/</span>
+        {title}
+      </div>
+      <h1>{title}</h1>
+      <p class="hero-sub">{description}</p>
+      <div class="meta-row">
+        {tags.map(tag => <span class="meta-tag">{tag}</span>)}
+        <span class="meta-date">Updated {date} — Michael S.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hibiscus-divider">✿ &nbsp; ✿ &nbsp; ✿</div>
+
+  <div class="page-layout">
+    <article class="article-body">
+      <slot />
+      <div class="cta-block">
+        <h3>Growing Notes<br /><em>From Hawaii</em></h3>
+        <p>KNF experiments, living soil projects, breeding updates, and real observations from the garden.</p>
+        <div class="email-form">
+          <input type="email" placeholder="your@email.com" />
+          <button type="button">Get Notes</button>
+        </div>
+      </div>
+    </article>
+
+    <aside class="sidebar">
+      {tocItems.length > 0 && (
+        <div class="sidebar-card">
+          <div class="sidebar-card-header">In This Article</div>
+          <ul class="sidebar-toc">
+            {tocItems.map(item => (
+              <li><a href={`#${item.id}`}>{item.label}</a></li>
+            ))}
+          </ul>
+        </div>
+      )}
+      <div class="sidebar-card">
+        <div class="sidebar-card-header">Growing Notes</div>
+        <div class="sidebar-newsletter">
+          <div class="label">From The Garden</div>
+          <p>KNF, living soil, coco, breeding, and 329 education. Real notes by email.</p>
+          <input type="email" placeholder="your@email.com" />
+          <button type="button">Get Weekly Notes</button>
+        </div>
+      </div>
+      {relatedInCluster.length > 0 && (
+        <div class="cluster-badge">
+          <div class="label">In This Cluster</div>
+          <ul>
+            {relatedInCluster.map(item => (
+              <li><a href={`/${siloSlug}/${item.slug}`} style="color: inherit; text-decoration: none;">{item.title}</a></li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </aside>
+  </div>
+
+</BaseLayout>

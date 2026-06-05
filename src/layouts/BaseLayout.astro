@@ -1,0 +1,69 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+}
+const { title, description } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title} | pakalolo.garden</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonicalURL} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:site_name" content="pakalolo.garden" />
+</head>
+<body>
+  <nav class="site-nav">
+    <a href="/" class="wordmark">pakalolo<span class="dot">.</span><span class="tld">garden</span></a>
+    <ul class="nav-links">
+      <li><a href="/knf">KNF</a></li>
+      <li><a href="/living-soil">Living Soil</a></li>
+      <li><a href="/deficiencies">Deficiencies</a></li>
+      <li><a href="/hawaii-growing">Hawaii Growing</a></li>
+      <li><a href="/concentrates">Concentrates</a></li>
+      <li><a href="/grow-journal">Grow Journal</a></li>
+    </ul>
+  </nav>
+
+  <slot />
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <a href="/" class="footer-wordmark">pakalolo<span class="tld">.garden</span></a>
+        <div class="footer-tagline">Hawaii Growing Resource<br />KNF · Living Soil · Home Cultivation</div>
+      </div>
+      <div class="footer-links">
+        <h4>Content</h4>
+        <ul>
+          <li><a href="/knf">KNF</a></li>
+          <li><a href="/living-soil">Living Soil</a></li>
+          <li><a href="/deficiencies">Deficiencies</a></li>
+          <li><a href="/hawaii-growing">Hawaii Growing</a></li>
+          <li><a href="/concentrates">Concentrates</a></li>
+          <li><a href="/grow-journal">Grow Journal</a></li>
+          <li><a href="/breeding">Breeding</a></li>
+        </ul>
+      </div>
+      <div class="footer-legal">
+        Educational content only.<br />
+        This site does not sell, distribute,<br />
+        or facilitate the purchase of cannabis<br />
+        or cannabis products.<br /><br />
+        All content for informational purposes<br />
+        under Hawaii HRS §329.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
+<style is:global>
+  @import '../styles/global.css';
+</style>

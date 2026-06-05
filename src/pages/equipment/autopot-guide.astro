@@ -1,0 +1,143 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+
+const tocItems = [
+  { id: 'why-autopots', label: 'Why AutoPots?' },
+  { id: 'system', label: 'Choosing Your System' },
+  { id: 'media', label: 'Growing Media' },
+  { id: 'airdomes', label: 'AirDomes' },
+  { id: 'environment', label: 'Building The Environment' },
+  { id: 'vpd', label: 'Understanding VPD' },
+  { id: 'water', label: 'Water Quality' },
+  { id: 'scrog', label: 'SCROG Training' },
+  { id: 'harvest', label: 'Harvest & Cure' },
+];
+
+const relatedInCluster = [
+  { title: 'AutoPot pH Problems', slug: 'autopot-ph-problems' },
+  { title: 'Coco Feeding Schedule', slug: 'coco-feeding-schedule' },
+  { title: 'Buffered Coco Explained', slug: 'buffered-coco-explained' },
+  { title: 'Cal Mag in Coco', slug: 'cal-mag-coco' },
+  { title: 'Coco vs Living Soil', slug: 'coco-vs-living-soil' },
+];
+---
+<ArticleLayout
+  title="The Complete AutoPot Guide (Hawaii Edition)"
+  description="From first fill to final flush — how to build a high-performance AutoPot garden using coco, environmental controls, and proper root-zone management."
+  silo="Equipment & Tools"
+  siloSlug="equipment"
+  tags={['Equipment', 'Coco', 'Hawaii', 'AutoPots']}
+  date="June 2026"
+  tocItems={tocItems}
+  relatedInCluster={relatedInCluster}
+>
+
+  <p class="lead">AutoPots are one of the most effective systems for home growers who want exceptional results without hand-watering every day. This guide covers the exact components, concepts, and techniques I use in my own garden.</p>
+
+  <h2 id="why-autopots">Why AutoPots?</h2>
+  <p>Traditional hand watering requires constant attention. AutoPots use gravity-fed bottom feeding through an AQUAvalve system that automatically delivers nutrient solution when the plant needs it — consistent moisture, a larger root system, and less daily labor.</p>
+
+  <div class="card-grid">
+    <div class="benefit-card">
+      <div class="label">Root Zone</div>
+      <p>Consistent moisture drives faster, more even root expansion across the entire medium.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Labor</div>
+      <p>Less daily watering means less room for human error. The system feeds on the plant's schedule, not yours.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Consistency</div>
+      <p>Nutrient solution stays at a stable concentration across every feeding cycle.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Yield</div>
+      <p>Strong roots support strong plants. Bigger root mass means more canopy, more flower sites.</p>
+    </div>
+  </div>
+
+  <div class="related-links">
+    <div class="label">Related Articles</div>
+    <ul>
+      <li><a href="/equipment/autopot-vs-hand-watering">AutoPot vs Hand Watering</a></li>
+      <li><a href="/equipment/bottom-feeding-explained">Bottom Feeding Explained</a></li>
+      <li><a href="/equipment/why-pot-size-matters">Why Pot Size Matters</a></li>
+    </ul>
+  </div>
+
+  <hr />
+
+  <h2 id="system">Choosing Your System</h2>
+  <h3>1Pot XL — 6.6 Gallon</h3>
+  <p>Best for larger cannabis plants, SCROG grows, and longer vegetative periods. The massive root zone and stable moisture make it the go-to for high-yield cultivation. This is what I run.</p>
+
+  <h3>Tray2Grow</h3>
+  <p>Better for multiple smaller plants or when you want flexibility. Large growing area, easy access, excellent root expansion — just less vertical root volume than the XL.</p>
+
+  <hr />
+
+  <h2 id="media">Growing Media</h2>
+  <h3>Option 1 — 100% Buffered Coco</h3>
+  <p>Most experienced AutoPot growers run pure coco. Excellent oxygenation, fast root development, high nutrient control, consistent moisture distribution. Raw coco needs proper buffering before use or you'll fight calcium deficiency from week one.</p>
+
+  <h3>Option 2 — 70/30 Coco + Pumice</h3>
+  <p>Adding pumice (not perlite) improves drainage and root oxygen levels. Unlike perlite, pumice doesn't float during bottom feeding — it stays stable throughout the entire grow cycle.</p>
+
+  <div class="related-links">
+    <div class="label">Related Articles</div>
+    <ul>
+      <li><a href="/equipment/how-to-buffer-coco">How To Buffer Coco Properly</a></li>
+      <li><a href="/equipment/pumice-vs-perlite">Pumice vs Perlite</a></li>
+    </ul>
+  </div>
+
+  <hr />
+
+  <h2 id="airdomes">AirDomes and Root Zone Oxygen</h2>
+  <p>One of the most effective AutoPot upgrades. An air pump pushes oxygen directly under the root mass through a dome at the bottom of the pot. Think of it as adding an engine underneath the roots. Faster development, reduced stress, improved nutrient uptake.</p>
+
+  <hr />
+
+  <h2 id="environment">Building The Environment</h2>
+  <p>Environmental control is often more important than nutrients. I run an AC Infinity ecosystem — the Controller AI+ handles temperature, humidity, VPD, fan speeds, and light schedules automatically.</p>
+
+  <hr />
+
+  <h2 id="vpd">Understanding VPD</h2>
+  <p>VPD may be the single most important environmental metric for indoor growing. It determines transpiration rate, which drives nutrient uptake, water movement, and growth speed. When VPD is dialed, leaves pray outward and growth visibly accelerates.</p>
+
+  <div class="hawaii-notes">
+    <p>Hawaii's baseline humidity swings hard between wet season (Nov–Mar) and dry season (Apr–Oct). I run a dehumidifier nearly year-round during flower because outdoor RH here regularly hits 75–85%. Without it, late flower turns into a mold experiment.</p>
+    <p>In veg I lean on whatever the trades are doing. In flower, I don't trust the weather. I trust the controller.</p>
+  </div>
+
+  <hr />
+
+  <h2 id="water">Water Quality</h2>
+  <p>Hawaii tap water EC varies by island and neighborhood. In Honolulu I've measured tap EC between 0.3–0.5 depending on season — usable but not ideal for dialing a coco feed chart. I switched to RO indoors for full control. Outdoors in living soil, tap is fine because the biology buffers fluctuations.</p>
+
+  <div class="related-links">
+    <div class="label">Related Articles</div>
+    <ul>
+      <li><a href="/equipment/ro-vs-tap-water">RO vs Tap Water</a></li>
+      <li><a href="/equipment/ph-explained">pH Explained</a></li>
+      <li><a href="/equipment/how-to-calibrate-ph-pen">How To Calibrate A pH Pen</a></li>
+      <li><a href="/equipment/understanding-ec">Understanding EC</a></li>
+    </ul>
+  </div>
+
+  <hr />
+
+  <h2 id="scrog">SCROG Training</h2>
+  <p>Screen of Green training maximizes canopy efficiency. I build PVC frames — inexpensive, customizable, reusable — and run micro paracord netting that's adjustable and plant-friendly throughout the grow.</p>
+
+  <hr />
+
+  <h2 id="harvest">Harvest, Dry, Cure</h2>
+  <p>Harvest timing impacts quality more than most growers realize. I monitor trichomes under a loupe — cloudy to amber is the window. Then slow dry for 10–14 days in a controlled environment before going into jars. Rushing the dry destroys terpenes faster than almost anything else in the process.</p>
+
+  <div class="hawaii-notes">
+    <p>Hawaii humidity makes drying genuinely hard. You need active humidity control in the dry space. I target 60°F / 60% RH during dry. In practice this means a small dehumidifier running continuously — annoying but non-negotiable if you want the end product to reflect the genetic potential.</p>
+  </div>
+
+</ArticleLayout>
