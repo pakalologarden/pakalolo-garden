@@ -1,0 +1,158 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+
+const tocItems = [
+  { id: 'overview', label: 'Growing in Hawaii' },
+  { id: 'indoor-vs-outdoor', label: 'Indoor vs Outdoor' },
+  { id: 'climate', label: 'Climate Basics' },
+  { id: 'systems', label: 'Growing Systems' },
+  { id: 'light', label: 'Light & Photoperiod' },
+  { id: 'water', label: 'Water Quality' },
+  { id: 'legal', label: '329 Legal Framework' },
+  { id: 'getting-started', label: 'Getting Started' },
+];
+
+const relatedInCluster = [
+  { title: '329 Homegrow Hawaiʻi', slug: '329-homegrow-hawaii' },
+  { title: 'Outdoor Cannabis Hawaiʻi', slug: 'outdoor-cannabis-hawaii' },
+  { title: 'Hawaiʻi Cannabis Climate Challenges', slug: 'hawaii-cannabis-climate' },
+  { title: 'Pest Pressure in Hawaiʻi', slug: 'cannabis-pest-pressure-hawaii' },
+];
+---
+
+<ArticleLayout
+  title="Growing Cannabis in Hawaiʻi — What's Different Here"
+  description="Cannabis cultivation in Hawaii comes with a specific set of challenges and advantages that mainland guides don't cover. Humidity, pests, light cycles, water quality, and 329 compliance."
+  silo="Hawaiʻi Growing"
+  siloSlug="hawaii-growing"
+  tags={['Hawaii', 'Cannabis', 'Homegrow', 'Indoor', 'Outdoor']}
+  date="June 2026"
+  tocItems={tocItems}
+  relatedInCluster={relatedInCluster}
+>
+
+  <p class="lead">Most cannabis growing guides are written for California, Colorado, or the Pacific Northwest. Hawaii is none of those places. The humidity alone changes almost every decision you make — medium, environment, IPM, harvest timing. This is what I've learned growing here.</p>
+
+  <hr />
+
+  <h2 id="overview">Growing in Hawaii</h2>
+
+  <p>Hawaii has real advantages for cannabis cultivation. Year-round warmth, intense sun, volcanic soil, and a culture of growing that goes back generations. But the challenges are just as real — persistent humidity, year-round pest pressure, salt air near the coast, and a light cycle that doesn't behave like the mainland.</p>
+
+  <p>The growers I've seen struggle here are usually applying mainland knowledge directly without accounting for the climate. The ones who do well adapt their systems to what Hawaii actually is.</p>
+
+  <hr />
+
+  <h2 id="indoor-vs-outdoor">Indoor vs Outdoor</h2>
+
+  <div class="card-grid">
+    <div class="benefit-card">
+      <div class="label">Indoor — More Control</div>
+      <p>You control temperature, humidity, light cycle, and airflow. Higher setup cost but more predictable results. A dehumidifier is non-negotiable in flower. This is what I run.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Outdoor — Lower Cost</div>
+      <p>Hawaii's sun is intense and free. Lower input cost. But humidity, pests, visibility compliance, and the compressed light cycle all require active management.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Greenhouse — Middle Ground</div>
+      <p>Protects from rain and reduces pest pressure while using natural light. Light deprivation is easier to implement than full outdoor. Popular on neighbor islands.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Hybrid — Clone to Outdoor</div>
+      <p>Start clones indoors, harden off, then move outside. Gives you control over early development while reducing indoor running costs long-term.</p>
+    </div>
+  </div>
+
+  <div class="hawaii-notes">
+    <span class="label">✿ HAWAII NOTES</span>
+    <p>I start all clones indoors in my EZ Clone system, then either keep them in AutoPots under lights or harden them off for outdoor. The hardening process in Hawaii is real — Oahu sun is significantly more intense than even a sunny indoor setup. 3-5 days of partial shade before full sun exposure, minimum.</p>
+  </div>
+
+  <hr />
+
+  <h2 id="climate">Climate Basics</h2>
+
+  <p>Hawaii's climate varies significantly by island, elevation, and which side of the mountain you're on. But a few things are consistent across most growing locations:</p>
+
+  <ul>
+    <li><strong>Humidity:</strong> Trade wind side (windward) runs 70-85% RH regularly. Leeward side is drier but still high by mainland standards. Flower stage in high humidity = botrytis risk.</li>
+    <li><strong>Temperature:</strong> Relatively stable year-round, 70-85°F at sea level. Less heat stress than continental climates, but nighttime temps rarely drop enough to stress plants in a useful way.</li>
+    <li><strong>Rain:</strong> Windward Oahu and the Big Island are some of the wettest places on earth. Leeward Oahu (Kapolei, Ewa Beach) is significantly drier — better for outdoor growing.</li>
+    <li><strong>Wind:</strong> Trade winds are consistent and strong. Good for transpiration, rough on tall outdoor plants. Staking and training matter more here.</li>
+  </ul>
+
+  <hr />
+
+  <h2 id="systems">Growing Systems</h2>
+
+  <p>Medium and system choice matter more in Hawaii than most places because of the humidity. What works on the mainland may hold too much moisture here.</p>
+
+  <ul>
+    <li><strong>Coco/perlite:</strong> What I run indoors. Fast-draining, no overwatering issues, works well with AutoPots. 70/30 coco to pumice is my current mix.</li>
+    <li><strong>Living soil:</strong> Works well outdoors in Hawaii's warmth. Microbial activity is strong in warm, humid conditions. Top dressing with KNF inputs fits the climate naturally.</li>
+    <li><strong>Straight perlite or pumice:</strong> Used by some outdoor growers who want maximum drainage and plan to fertigate heavily. Almost no buffer but eliminates overwatering entirely.</li>
+    <li><strong>Native soil:</strong> Hawaii's volcanic soil is mineral-rich but often needs amendment for pH and drainage. Can work for outdoor with preparation. Test before you commit.</li>
+  </ul>
+
+  <hr />
+
+  <h2 id="light">Light and Photoperiod</h2>
+
+  <p>Hawaii sits at approximately 19-22° north latitude depending on which island. This affects outdoor growing in two important ways:</p>
+
+  <p>First, the variation in day length across the year is much smaller than the mainland — roughly 11 hours at winter solstice to 13.5 hours at summer solstice. Photoperiod plants outdoors will flower, but the trigger is less dramatic and timing is compressed.</p>
+
+  <p>Second, the sun intensity at this latitude is significant. UV index regularly hits 11+ in summer. This is good for terpene and resin production but can cause light stress on plants moved from indoor to outdoor without proper hardening.</p>
+
+  <div class="hawaii-notes">
+    <span class="label">✿ HAWAII NOTES</span>
+    <p>Autoflowering genetics make more sense for outdoor Hawaii than most growers realize. You're not dependent on the seasonal light shift, you can run multiple cycles per year, and the shorter stature helps with visibility compliance under 329. Worth considering if you're planning an outdoor run.</p>
+  </div>
+
+  <hr />
+
+  <h2 id="water">Water Quality</h2>
+
+  <p>Water quality in Hawaii varies by location and source. A few things worth knowing:</p>
+
+  <ul>
+    <li><strong>Oahu municipal water</strong> is treated and generally runs 7.0-7.8 pH with moderate mineral content. Fine for living soil after pH adjustment, needs buffering for coco.</li>
+    <li><strong>Well water</strong> varies widely by location. Test before using — some areas have high mineral content or pH issues.</li>
+    <li><strong>RO water</strong> is what I use indoors. Strips everything out, gives you a clean baseline to build from. Essential for precision feeding in coco.</li>
+    <li><strong>Rainwater</strong> is soft and slightly acidic — good for living soil outdoor grows on the wet side of the island where collection is easy.</li>
+  </ul>
+
+  <hr />
+
+  <h2 id="legal">329 Legal Framework</h2>
+
+  <p>Home cultivation in Hawaii is legal for registered medical cannabis patients under HRS §329. The key points:</p>
+
+  <ul>
+    <li>Up to 10 plants total at your registered grow site</li>
+    <li>Grow site must be listed on your 329 card</li>
+    <li>Plants must be tagged with your registration number and expiration date</li>
+    <li>Grow must be enclosed, locked, and not visible from public spaces</li>
+    <li>4 ounces of usable cannabis possession limit</li>
+  </ul>
+
+  <p>For the full breakdown, see the <a href="/hawaii-growing/329-homegrow-hawaii">329 Homegrow Hawaii</a> page.</p>
+
+  <hr />
+
+  <h2 id="getting-started">Getting Started</h2>
+
+  <p>If you're new to growing in Hawaii, the path I'd recommend:</p>
+
+  <ol>
+    <li>Get your 329 card and register your grow site before anything else</li>
+    <li>Start with a small indoor tent — 2x4 or 4x4. Control the environment first.</li>
+    <li>Run coco with a simple nutrient line before moving to living soil or KNF</li>
+    <li>Add a dehumidifier before you flip to flower — not after you find botrytis</li>
+    <li>Learn IPM before you need it. Preventative is the only IPM that works here.</li>
+  </ol>
+
+  <p>The <a href="/autopot-guide">AutoPot Growing Guide</a> covers the full cultivation system I run in Hawaii in detail.</p>
+
+</ArticleLayout>

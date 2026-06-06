@@ -1,0 +1,203 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+
+const tocItems = [
+  { id: 'overview', label: 'Why Hawaii Is Different' },
+  { id: 'thrips', label: 'Thrips' },
+  { id: 'russet-mites', label: 'Russet Mites' },
+  { id: 'fungus-gnats', label: 'Fungus Gnats' },
+  { id: 'caterpillars', label: 'Caterpillars and Budworms' },
+  { id: 'aphids', label: 'Aphids' },
+  { id: 'botrytis', label: 'Botrytis' },
+  { id: 'ipm-system', label: 'Building an IPM System' },
+  { id: 'knf-ipm', label: 'KNF for IPM' },
+];
+
+const relatedInCluster = [
+  { title: '329 Homegrow Hawaiʻi', slug: '329-homegrow-hawaii' },
+  { title: 'Growing Cannabis in Hawaiʻi', slug: 'growing-cannabis-hawaii' },
+  { title: 'Outdoor Cannabis Hawaiʻi', slug: 'outdoor-cannabis-hawaii' },
+  { title: 'Hawaiʻi Cannabis Climate Challenges', slug: 'hawaii-cannabis-climate' },
+];
+---
+
+<ArticleLayout
+  title="Cannabis Pest Pressure in Hawaiʻi — Year-Round IPM"
+  description="Hawaii's warm climate means pest populations never crash. Thrips, russet mites, fungus gnats, caterpillars, botrytis — what you're dealing with and how to stay ahead of it."
+  silo="Hawaiʻi Growing"
+  siloSlug="hawaii-growing"
+  tags={['IPM', 'Pests', 'Hawaii', 'Thrips', 'Botrytis', 'KNF']}
+  date="June 2026"
+  tocItems={tocItems}
+  relatedInCluster={relatedInCluster}
+>
+
+  <p class="lead">Mainland IPM guides assume a winter frost resets pest populations once a year. In Hawaii that never happens. Every pest you encounter is operating on a continuous breeding cycle, year-round, with no cold shock to slow it down. Reactive IPM doesn't work here. You need a system that runs before the problem shows up.</p>
+
+  <hr />
+
+  <h2 id="overview">Why Hawaii Is Different</h2>
+
+  <p>Hawaii's pest pressure is uniquely challenging for a few reasons:</p>
+
+  <ul>
+    <li><strong>No winter reset.</strong> Pest populations breed continuously. A thrips infestation you don't fully eliminate in October is still going in February.</li>
+    <li><strong>High humidity.</strong> Fungal issues like botrytis and powdery mildew thrive in Hawaii's ambient conditions.</li>
+    <li><strong>Diverse pest species.</strong> Hawaii's isolation created unique local pest populations alongside introduced species. Some mainland treatments are less effective here.</li>
+    <li><strong>Outdoor-to-indoor transfer.</strong> If you're running clones that spent any time outdoors, or if your grow space has outdoor air coming in, pests come with it.</li>
+  </ul>
+
+  <p>The growers I've seen lose plants here — including myself early on — almost always got into trouble by treating IPM as reactive rather than preventative. By the time you see symptoms, the population is already established.</p>
+
+  <hr />
+
+  <h2 id="thrips">Thrips</h2>
+
+  <p>Thrips are the most common and persistent pest I deal with in Hawaii. They're small enough to miss on casual inspection and damage accumulates fast.</p>
+
+  <p><strong>What you'll see:</strong> Silver or bronze stippling on leaf surfaces, small dark frass specks, distorted new growth in heavy infestations. Under magnification you'll see the insects themselves — tiny, elongated, fast-moving.</p>
+
+  <p><strong>Why Hawaii is bad for them:</strong> Thrips breed rapidly in warm conditions and are present outdoors year-round. Any outdoor air exposure means thrips exposure.</p>
+
+  <p><strong>What works:</strong></p>
+  <ul>
+    <li>Spinosad (Entrust SC or Monterey Garden Insect Spray) — effective, low toxicity, rotate to prevent resistance</li>
+    <li>Predatory insects — <em>Amblyseius cucumeris</em> and <em>Amblyseius swirskii</em> feed on thrips larvae. Slow to establish but sustainable.</li>
+    <li>OHN foliar as preventative — I apply weekly in veg as part of my standard KNF rotation</li>
+    <li>Blue sticky traps for monitoring population levels</li>
+  </ul>
+
+  <div class="hawaii-notes">
+    <span class="label">✿ HAWAII NOTES</span>
+    <p>Thrips are my most consistent battle. I run OHN foliar every 7-10 days in veg as standard practice — not when I see thrips, just always. When I've skipped it for 3+ weeks I've regretted it every time. The preventative window is much easier to maintain than the reactive window.</p>
+  </div>
+
+  <hr />
+
+  <h2 id="russet-mites">Russet Mites</h2>
+
+  <p>Russet mites are a serious threat that many growers don't catch until significant damage is done because they're nearly invisible to the naked eye.</p>
+
+  <p><strong>What you'll see:</strong> Upward leaf curl starting at the bottom of the plant and moving up, bronze or rust coloring on stems, leaves that look healthy but feel rough. Plants appear to have a mystery deficiency or pH problem that doesn't respond to treatment.</p>
+
+  <p><strong>Diagnosis:</strong> You need a jeweler's loupe (30-60x) or USB microscope to see them. Look at the undersides of affected leaves and the surface of stems. They're elongated, pale, and slow-moving.</p>
+
+  <p><strong>What works:</strong></p>
+  <ul>
+    <li>Sulfur-based treatments — effective but cannot be used within 2 weeks of harvest or in high temps (burns plants above 90°F)</li>
+    <li>Predatory mites — <em>Amblyseius andersoni</em> is the most effective predator for russet mites</li>
+    <li>Neem oil in early stages — less effective on established populations but useful preventatively</li>
+    <li>Heat treatment — russet mites die above 115°F. Some growers use this for tools and clone trays.</li>
+  </ul>
+
+  <hr />
+
+  <h2 id="fungus-gnats">Fungus Gnats</h2>
+
+  <p>Fungus gnats are primarily a problem in living soil and overly moist growing media. Less of an issue in coco/AutoPots where the medium dries more completely between waterings.</p>
+
+  <p><strong>What you'll see:</strong> Small black flies hovering around the soil surface, larvae in the top inch of growing media, root damage in heavy infestations that looks like nutrient deficiency.</p>
+
+  <p><strong>What works:</strong></p>
+  <ul>
+    <li>Bacillus thuringiensis israelensis (Bti) — mosquito dunks dissolved in water, drench the soil. Kills larvae in the medium.</li>
+    <li>Diatomaceous earth on the soil surface — physical barrier that kills adults</li>
+    <li>Yellow sticky traps for monitoring and population reduction</li>
+    <li>Letting the top 2 inches of medium dry completely between waterings — eliminates the environment larvae need</li>
+    <li>Beneficial nematodes (<em>Steinernema feltiae</em>) — effective biological control in living soil</li>
+  </ul>
+
+  <hr />
+
+  <h2 id="caterpillars">Caterpillars and Budworms</h2>
+
+  <p>Caterpillars and budworms are a significant outdoor threat in Hawaii that indoor growers rarely face. The danger is that they burrow into buds and cause rot from the inside — by the time you see it from the outside, a significant portion of the bud may already be compromised.</p>
+
+  <p><strong>What you'll see:</strong> Small entry holes in buds, frass (dark pellet-like droppings) at the base of colas, sections of bud dying and turning brown that pull apart to reveal a caterpillar and rot inside.</p>
+
+  <p><strong>What works:</strong></p>
+  <ul>
+    <li>Bacillus thuringiensis kurstaki (Btk) — the standard treatment. Spray weekly on outdoor plants, especially in flower. Non-toxic to humans and beneficial insects.</li>
+    <li>Spinosad — also effective against caterpillars, rotate with Bt to prevent resistance</li>
+    <li>Physical inspection — check every cola regularly in late flower. Catching one early limits damage.</li>
+  </ul>
+
+  <div class="hawaii-notes">
+    <span class="label">✿ HAWAII NOTES</span>
+    <p>Budworms are the outdoor pest I respect most in Hawaii. I've seen a single caterpillar cause a chain reaction of botrytis in a dense cola that took out 30% of a plant in 5 days. The entry wound creates the perfect wet, dark environment for mold to establish. Weekly Bt spray is non-negotiable for outdoor flower here.</p>
+  </div>
+
+  <hr />
+
+  <h2 id="aphids">Aphids</h2>
+
+  <p>Aphids colonize fast in Hawaii's warmth and can weaken plants significantly before you notice them.</p>
+
+  <p><strong>What you'll see:</strong> Clusters of small soft-bodied insects on new growth and undersides of leaves, sticky honeydew residue on leaves below colonies, sooty mold developing on honeydew deposits.</p>
+
+  <p><strong>What works:</strong></p>
+  <ul>
+    <li>Insecticidal soap — direct contact spray, effective and safe. Apply in early morning or evening, not in full sun.</li>
+    <li>Neem oil — effective early, less so on established colonies</li>
+    <li>Ladybugs — Hawaii has native ladybug populations. Encouraging them near your outdoor grow helps.</li>
+    <li>Strong water spray — physically knocking aphids off plants works for small infestations on sturdy plants</li>
+  </ul>
+
+  <hr />
+
+  <h2 id="botrytis">Botrytis (Grey Mold)</h2>
+
+  <p>Botrytis is a fungal disease rather than a pest, but it's the most devastating threat to flower quality in Hawaii and deserves its own section.</p>
+
+  <p><strong>What you'll see:</strong> Sections of bud turning brown and dying, grey fuzzy mold visible when you pull the affected section apart, rapid spread to adjacent buds in humid conditions.</p>
+
+  <p><strong>Why Hawaii is bad:</strong> Botrytis thrives in humid conditions with poor airflow. Hawaii's ambient humidity, combined with dense bud structure and the warm temperatures that accelerate spore germination, creates near-ideal conditions for an outbreak in late flower.</p>
+
+  <p><strong>What works:</strong></p>
+  <ul>
+    <li><strong>Prevention is the only real answer.</strong> Once botrytis is in a dense bud it spreads faster than you can treat it.</li>
+    <li>Airflow — keep air moving through the canopy at all times</li>
+    <li>Humidity management — below 50% RH in late flower dramatically reduces risk</li>
+    <li>Defoliation — removing dense leaf coverage around buds improves airflow and reduces moisture retention</li>
+    <li>Potassium bicarbonate sprays — can slow surface spread but won't eliminate established infection</li>
+    <li>Harvest timing — if botrytis appears in late flower, harvesting early beats losing the whole plant</li>
+  </ul>
+
+  <hr />
+
+  <h2 id="ipm-system">Building an IPM System</h2>
+
+  <p>Effective IPM in Hawaii is a scheduled system, not a response to problems. Here's the framework I run:</p>
+
+  <div class="card-grid">
+    <div class="benefit-card">
+      <div class="label">Weekly — Veg</div>
+      <p>OHN foliar spray (1-2mL/L). Visual inspection with loupe. Yellow and blue sticky trap check. Fungus gnat monitoring.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Weekly — Early Flower</div>
+      <p>OHN foliar through week 3. Defoliation for airflow. Humidity trending down toward 50%. Sticky trap check.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Biweekly — Late Flower</div>
+      <p>Stop foliar sprays by week 4-5. Visual inspection of every cola. Dehumidifier confirmed running. Airflow check.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Every New Plant</div>
+      <p>Quarantine incoming clones for 1 week. Inspect before introducing to main space. New genetics get extra scrutiny.</p>
+    </div>
+  </div>
+
+  <hr />
+
+  <h2 id="knf-ipm">KNF for IPM</h2>
+
+  <p>Korean Natural Farming inputs, particularly OHN, function as both plant health support and pest deterrent. The fermented garlic, ginger, and turmeric compounds in OHN create an environment on plant surfaces that pests find hostile.</p>
+
+  <p>This isn't a replacement for conventional IPM in a serious infestation — but as a preventative layer in a weekly spray schedule, it genuinely reduces pressure. I've run plants with and without consistent OHN foliar in the same environment and the difference in thrips pressure was noticeable.</p>
+
+  <p>For OHN recipe and application rates, see the <a href="/knf/ohn-recipe-hawaii">OHN Recipe Hawaii</a> page. For the full KNF system, see <a href="/knf">KNF Hawaii</a>.</p>
+
+  <p>For the complete indoor growing system I run: <a href="/autopot-guide">AutoPot Growing Guide</a>.</p>
+
+</ArticleLayout>

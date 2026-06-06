@@ -1,0 +1,174 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+
+const tocItems = [
+  { id: 'overview', label: 'The Hawaii Climate Problem' },
+  { id: 'humidity', label: 'Humidity' },
+  { id: 'temperature', label: 'Temperature' },
+  { id: 'wind', label: 'Wind and Airflow' },
+  { id: 'rain', label: 'Rainfall by Region' },
+  { id: 'light', label: 'Light and UV' },
+  { id: 'salt-air', label: 'Salt Air' },
+  { id: 'solutions', label: 'Working With It' },
+];
+
+const relatedInCluster = [
+  { title: '329 Homegrow Hawaiʻi', slug: '329-homegrow-hawaii' },
+  { title: 'Growing Cannabis in Hawaiʻi', slug: 'growing-cannabis-hawaii' },
+  { title: 'Outdoor Cannabis Hawaiʻi', slug: 'outdoor-cannabis-hawaii' },
+  { title: 'Pest Pressure in Hawaiʻi', slug: 'cannabis-pest-pressure-hawaii' },
+];
+---
+
+<ArticleLayout
+  title="Hawaiʻi Cannabis Climate Challenges — What the Guides Don't Tell You"
+  description="Humidity, salt air, year-round pest pressure, compressed light cycles, and intense UV. Growing cannabis in Hawaii requires adapting to conditions most cultivation guides never address."
+  silo="Hawaiʻi Growing"
+  siloSlug="hawaii-growing"
+  tags={['Hawaii', 'Climate', 'Humidity', 'VPD', 'Outdoor']}
+  date="June 2026"
+  tocItems={tocItems}
+  relatedInCluster={relatedInCluster}
+>
+
+  <p class="lead">Every cannabis cultivation guide I've read was written for somewhere else. The humidity sections assume you're fighting to keep RH up in a dry climate. The pest sections assume a winter frost will reset populations. The light cycle advice assumes you're at 35-45° latitude. None of that is Hawaii. Here's what the climate here actually means for cultivation.</p>
+
+  <hr />
+
+  <h2 id="overview">The Hawaii Climate Problem</h2>
+
+  <p>Hawaii's climate is genuinely unusual for cannabis cultivation. We have advantages — intense sun, warm stable temperatures, rich volcanic soil, and no hard frost. But the challenges are persistent in a way that mainland growers don't experience.</p>
+
+  <p>The core issue is that Hawaii's climate doesn't reset. No hard winter means pests overwinter and populations stay active year-round. High baseline humidity means fungal pressure is constant. The compressed light cycle means outdoor photoperiod timing requires more attention than most guides suggest.</p>
+
+  <p>Understanding the climate is the first step to working with it rather than against it.</p>
+
+  <hr />
+
+  <h2 id="humidity">Humidity</h2>
+
+  <p>This is the defining challenge for cannabis cultivation in Hawaii, particularly for flower quality.</p>
+
+  <ul>
+    <li>Windward Oahu, windward Maui, and most of the Big Island's wet side regularly run 75-90% RH</li>
+    <li>Leeward areas (Kapolei, Ewa, Kona, Kihei) are significantly drier — 50-65% RH on trade wind days</li>
+    <li>VPD management indoors requires a dehumidifier running in flower, not optional</li>
+    <li>Botrytis (grey mold) is the primary threat to outdoor flower quality in humid locations</li>
+    <li>Powdery mildew is less common than the mainland but still present, especially in areas with poor airflow</li>
+  </ul>
+
+  <div class="card-grid">
+    <div class="benefit-card">
+      <div class="label">Veg Stage</div>
+      <p>Plants in veg tolerate higher humidity well — 60-70% RH is fine and even beneficial for transpiration. Not the problem stage.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Early Flower</div>
+      <p>Begin pulling humidity down as buds form. Target 50-55% RH. Dehumidifier should be running consistently by week 3 of flower indoors.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Late Flower</div>
+      <p>Dense buds in weeks 6-9 are botrytis territory. Target 45-50% RH indoors. Outdoors, this is where genetics selection and airflow become critical.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Drying</div>
+      <p>Hawaii's ambient humidity makes slow drying difficult. A dedicated drying space with dehumidification and airflow is necessary for quality preservation.</p>
+    </div>
+  </div>
+
+  <div class="hawaii-notes">
+    <span class="label">✿ HAWAII NOTES</span>
+    <p>I run an AC Infinity Controller AI+ managing both my inline fan and dehumidifier simultaneously based on VPD targets. In late flower in Hawaii, the dehumidifier runs more hours than it doesn't. Factor the electricity cost into your grow budget. It's not trivial here.</p>
+  </div>
+
+  <hr />
+
+  <h2 id="temperature">Temperature</h2>
+
+  <p>Temperature in Hawaii is actually one of the easier variables to manage. Sea level temps stay relatively stable year-round — mid-70s to mid-80s°F during the day, low-to-mid 70s at night.</p>
+
+  <p>This means:</p>
+
+  <ul>
+    <li>Heat stress is less common than on the mainland, even outdoors</li>
+    <li>Cold stress essentially doesn't exist at sea level</li>
+    <li>The stable temps support consistent metabolic activity and growth rates</li>
+    <li>Indoors, heat management from lighting is the primary concern — LED reduces this significantly vs HPS</li>
+  </ul>
+
+  <p>Higher elevation changes things considerably. Upcountry Maui at 3,000+ feet can see temperatures drop into the 50s°F at night, which stresses plants and can trigger early flower in some genetics.</p>
+
+  <hr />
+
+  <h2 id="wind">Wind and Airflow</h2>
+
+  <p>Trade winds in Hawaii are consistent and strong — typically 10-20 mph on windward exposures, lighter on leeward sides. For outdoor growing this is mostly beneficial:</p>
+
+  <ul>
+    <li>Constant airflow reduces canopy humidity and slows fungal development</li>
+    <li>Transpiration is high, which drives uptake and growth in well-watered plants</li>
+    <li>Stems develop strength naturally from constant movement (mechanical stress = stronger stalks)</li>
+  </ul>
+
+  <p>The challenge is that strong trade winds can damage tall, top-heavy outdoor plants. Low-stress training (LST), topping, and staking all matter more for outdoor grows in Hawaii than they would in a calmer climate.</p>
+
+  <hr />
+
+  <h2 id="rain">Rainfall by Region</h2>
+
+  <p>Hawaii's rainfall variation is extreme — some of the wettest and driest places on earth exist within 30 miles of each other on Oahu and the Big Island.</p>
+
+  <ul>
+    <li><strong>Windward Oahu (Kaneohe, Kailua):</strong> 60-80 inches/year. Heavy rain, persistent cloud cover, high humidity. Outdoor flower is difficult.</li>
+    <li><strong>Leeward Oahu (Kapolei, Ewa, Waianae):</strong> 15-25 inches/year. Dry, sunny, trade winds. Much more viable for outdoor cultivation.</li>
+    <li><strong>Honolulu:</strong> ~17 inches/year at the airport, more in the valleys. Variable.</li>
+    <li><strong>Big Island Kona side:</strong> Dry and sunny with afternoon clouds. Historically excellent outdoor growing conditions.</li>
+    <li><strong>Big Island Hilo side:</strong> Over 130 inches/year in some areas. One of the wettest places on earth. Outdoor growing is a significant challenge.</li>
+  </ul>
+
+  <hr />
+
+  <h2 id="light">Light and UV</h2>
+
+  <p>Hawaii's light is intense. UV index regularly reaches 11-13 in summer — the "extreme" category. This has meaningful effects on cultivation:</p>
+
+  <ul>
+    <li><strong>Resin production</strong> — high UV drives trichome development as a natural UV shield. Outdoor Hawaii plants often show excellent resin coverage.</li>
+    <li><strong>Light stress</strong> — plants moved from indoor to outdoor without hardening will show bleaching and stress symptoms within days. Harden properly.</li>
+    <li><strong>Terpene expression</strong> — the combination of UV intensity, diurnal temperature fluctuation, and the specific mineral profile of Hawaii's volcanic soil creates flavor profiles that are genuinely different from indoor grows.</li>
+  </ul>
+
+  <div class="hawaii-notes">
+    <span class="label">✿ HAWAII NOTES</span>
+    <p>I've seen clones taken from the same mother plant — one grown indoors under LEDs, one hardened off and finished outdoors in Kapolei — produce noticeably different terpene profiles at harvest. The outdoor plant had more complexity. Hawaii's sun does something that lights can't fully replicate.</p>
+  </div>
+
+  <hr />
+
+  <h2 id="salt-air">Salt Air</h2>
+
+  <p>Coastal locations in Hawaii deal with salt air deposition on plant surfaces. The closer to the ocean, the more significant this becomes.</p>
+
+  <ul>
+    <li>Salt deposits on leaves interfere with transpiration and light absorption</li>
+    <li>Leaf tips and margins show salt burn symptoms that can be confused with nutrient issues</li>
+    <li>Regular plain water foliar rinses (early morning) help wash salt off leaves</li>
+    <li>Structures that reduce direct ocean spray exposure help considerably</li>
+    <li>Even a few blocks from the shoreline makes a measurable difference in salt deposition</li>
+  </ul>
+
+  <hr />
+
+  <h2 id="solutions">Working With It</h2>
+
+  <p>The growers who do well in Hawaii don't fight the climate — they build systems that account for it from the start.</p>
+
+  <ul>
+    <li><strong>Indoor:</strong> Dehumidifier sized for your space, VPD-based environmental control, LED lighting, RO water, preventative IPM on a schedule</li>
+    <li><strong>Outdoor leeward:</strong> Mold-resistant genetics, covered structure for late flower, consistent IPM, morning watering, strategic airflow</li>
+    <li><strong>Outdoor windward:</strong> Greenhouse or light dep structure, aggressive mold-resistant genetics selection, harvest timing adjusted to beat the wettest periods</li>
+  </ul>
+
+  <p>For how I manage environment indoors, see the <a href="/autopot-guide">AutoPot Growing Guide</a>. For pest management specifically, see <a href="/hawaii-growing/cannabis-pest-pressure-hawaii">Pest Pressure in Hawaiʻi</a>.</p>
+
+</ArticleLayout>
