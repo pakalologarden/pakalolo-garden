@@ -1,0 +1,113 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+
+const tocItems = [
+  { id: 'what-is-knf', label: 'What Is KNF?' },
+  { id: 'hawaii-roots', label: 'KNF In Hawaii' },
+  { id: 'core-inputs', label: 'Core KNF Inputs' },
+  { id: 'my-approach', label: 'How I Actually Use KNF' },
+  { id: 'getting-started', label: 'Getting Started' },
+];
+
+const relatedInCluster = [
+  { title: 'LAB Recipe Hawaii', slug: 'lab-recipe-hawaii' },
+  { title: 'OHN Recipe Hawaii', slug: 'ohn-recipe-hawaii' },
+  { title: 'FPJ Recipe Hawaii', slug: 'fpj-recipe-hawaii' },
+  { title: 'KNF For Cannabis', slug: 'knf-for-cannabis' },
+];
+---
+
+<ArticleLayout
+  title="Korean Natural Farming Hawaii — KNF Guide"
+  description="KNF in Hawaii from a grower who actually uses it — not a purist, not a textbook. Real inputs, real results, real talk about what works and what doesn't."
+  silo="KNF"
+  siloSlug="knf"
+  tags={['KNF', 'Korean Natural Farming', 'Hawaii', 'Living Soil']}
+  date="June 2026"
+  tocItems={tocItems}
+  relatedInCluster={relatedInCluster}
+>
+
+  <p class="lead">I'm not a KNF purist. My indoor coco grows run mineral nutrients. But my outdoor soil builds, my living soil mixes, and my root zone maintenance are heavily influenced by KNF principles. I use KNF where it makes sense. I don't use it where it doesn't. This is what I've actually learned.</p>
+
+  <h2 id="what-is-knf">What Is KNF?</h2>
+  <p>Korean Natural Farming is a cultivation philosophy built around working with indigenous microorganisms and fermented inputs rather than synthetic chemistry. Master Cho Han-kyu developed and systematized it in Korea, drawing on centuries of Asian natural farming traditions. The core principle is simple — healthy soil contains everything plants need. The farmer's job is to cultivate and amplify that biology, not replace it.</p>
+  <p>KNF centers on a set of fermented inputs made from locally sourced materials — lactic acid bacteria, fermented plant juices, oriental herbal nutrients, water-soluble calcium, and indigenous microorganisms collected from your local environment. Each input serves a specific purpose. The emphasis on local collection and fermentation is what makes KNF different from other organic approaches — and what makes Hawaii such a good place to practice it.</p>
+
+  <hr />
+
+  <h2 id="hawaii-roots">KNF In Hawaii</h2>
+  <p>Hawaii has a unique relationship with KNF that most people don't know about. Chris Trump, a Big Island macadamia nut farmer, studied directly with Master Cho when his 750-acre family farm was struggling — low profits, high chemical inputs, degraded soil. He brought KNF back to Hawaii and applied it. Today that farm is fully certified organic and managed entirely with KNF techniques — one of the most significant commercial KNF success stories in the world.</p>
+  <p>Hawaii now has an estimated 2,000 KNF practitioners and one of the most active KNF communities outside Asia. There's even a Cho Global Natural Farming Hawaii organization on the Big Island dedicated to preserving Master Cho's teachings. This isn't a practice imported from somewhere else and adapted here — KNF has real roots in Hawaii soil.</p>
+  <p>For home growers on Oahu, that matters. The indigenous microorganisms in Hawaii's forest ecosystem are genuinely exceptional. The climate accelerates fermentation. The biodiversity supports biological farming in ways that drier, colder climates simply can't match.</p>
+
+  <div class="card-grid">
+    <div class="benefit-card">
+      <div class="label">Climate</div>
+      <p>Warm year-round temperatures accelerate fermentation and biological activity significantly.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Biodiversity</div>
+      <p>Hawaii's ecosystem supports exceptional indigenous microorganism populations.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Local Materials</div>
+      <p>Tropical plants, fruits, and vegetation provide excellent FPJ and OHN source material.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Community</div>
+      <p>2,000+ KNF practitioners in Hawaii. Real knowledge sharing happening locally.</p>
+    </div>
+  </div>
+
+  <hr />
+
+  <h2 id="core-inputs">Core KNF Inputs</h2>
+
+  <h3>LAB — Lactic Acid Bacteria</h3>
+  <p>The foundational KNF input and the one I use most consistently. LAB is collected by fermenting rice wash water then culturing it in milk. The resulting serum is rich in beneficial bacteria that suppress pathogenic organisms, improve nutrient availability, and support root zone health. I use it as a regular soil drench on outdoor plants and in living soil builds.</p>
+
+  <h3>FPJ — Fermented Plant Juice</h3>
+  <p>Made by fermenting actively growing plant material in brown sugar. The fermentation extracts hormones, enzymes, and nutrients from the plant tissue. Fast-growing shoots for vegetative support, flowering plants for bloom. I make FPJ from whatever is growing vigorously in the garden — it's one of the most locally specific inputs you can make.</p>
+
+  <h3>OHN — Oriental Herbal Nutrient</h3>
+  <p>A fermented extract made from garlic, ginger, licorice root, cinnamon, and angelica root. Broad spectrum bioactive compounds that support plant immunity and pest resistance. More complex to make than LAB but worth it — OHN foliar sprays have noticeably changed how my outdoor plants handle pest pressure.</p>
+
+  <h3>WCA — Water-Soluble Calcium</h3>
+  <p>Made by fermenting eggshells or clamshells in brown rice vinegar. Highly bioavailable calcium that supports cell wall development and flower formation. I use this during late veg and early flower on outdoor plants in living soil.</p>
+
+  <h3>IMO — Indigenous Microorganisms</h3>
+  <p>Collected from local forest floor by leaving cooked rice in a wooden box in the forest, then culturing the resulting fungal growth in brown sugar. IMO inoculates your soil with locally adapted biology. Hawaii's forests are exceptional IMO collection sites — the microbial diversity here is genuinely different from what you'll find in a mainland forest.</p>
+
+  <hr />
+
+  <h2 id="my-approach">How I Actually Use KNF</h2>
+  <p>My indoor coco grows in AutoPots run mineral nutrients — GH flora series, cal-mag, EC-based feeding. KNF doesn't fit that system and I don't try to force it. Coco is a sterile medium and I'm controlling the nutrient solution precisely. That's not where KNF belongs.</p>
+  <p>Where KNF belongs in my garden is the outdoor soil system. My living soil builds include LAB inoculation, IMO from local collection, and WCA for calcium availability. My outdoor plants get regular LAB drenches through veg and flower. OHN as a foliar during pest pressure seasons. FPJ from garden material when I have it.</p>
+  <p>The philosophy I've landed on is this — KNF principles guide how I think about soil biology and plant health across the whole garden, even when I'm not using KNF inputs directly. Feed the soil. Reduce stress. Create conditions for genetic expression. Let the plant do the rest.</p>
+  <p>That's the same philosophy whether I'm managing EC in a coco reservoir or making LAB in a jar on the counter.</p>
+
+  <hr />
+
+  <h2 id="getting-started">Getting Started</h2>
+  <p>Start with LAB. It's the simplest input to make, requires minimal materials — rice, water, milk, molasses — and gives you an immediate feel for the fermentation process that underlies all KNF inputs. Use it as a soil drench at 1:1000 dilution once a week and watch what happens to your soil over a month.</p>
+  <p>Don't try to make everything at once. KNF is a practice that builds over time. Each input you learn to make correctly adds a real tool to your cultivation system. Start with what you'll actually use consistently rather than making a full input library that sits on a shelf.</p>
+
+  <div class="hawaii-notes">
+    <p>Fermentation speed in Hawaii is fast. What takes 7 days in a colder climate takes 3-4 days here in summer. Check your ferments more frequently than mainland recipes suggest — I've had LAB ready in 2 days during August.</p>
+    <p>For IMO collection — the forest above Kapolei and the Ko'olau range both have excellent sites. Look for deep leaf litter with visible fungal activity — white mycelium threading through the duff layer. That's what you want in your box. The diversity of what you collect from Hawaii's forest ecosystem is genuinely exceptional.</p>
+    <p>One honest note — pure KNF as Master Cho teaches it is more intensive and systematic than what most home growers practice, including me. If you want to go deeper into traditional KNF practice, Cho Global Natural Farming Hawaii on the Big Island runs classes. What I document here is my practical interpretation, not doctrine.</p>
+  </div>
+
+  <div class="related-links">
+    <div class="label">Related Articles</div>
+    <ul>
+      <li><a href="/knf/lab-recipe-hawaii">LAB Recipe Hawaii</a></li>
+      <li><a href="/knf/ohn-recipe-hawaii">OHN Recipe Hawaii</a></li>
+      <li><a href="/knf/fpj-recipe-hawaii">FPJ Recipe Hawaii</a></li>
+      <li><a href="/knf/knf-for-cannabis">KNF For Cannabis</a></li>
+      <li><a href="/autopot-guide">Complete AutoPot Growing Guide</a></li>
+    </ul>
+  </div>
+
+</ArticleLayout>
