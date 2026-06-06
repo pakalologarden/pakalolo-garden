@@ -1,0 +1,130 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+
+const tocItems = [
+  { id: 'what-is-ppm', label: 'What Is PPM?' },
+  { id: 'two-scales', label: 'The Two PPM Scales' },
+  { id: 'why-ec', label: 'Why I Use EC Instead' },
+  { id: 'ranges', label: 'PPM Ranges By Stage' },
+  { id: 'tap-water', label: 'PPM of Your Source Water' },
+  { id: 'meters', label: 'TDS Meters' },
+];
+
+const relatedInCluster = [
+  { title: 'Understanding EC', slug: 'understanding-ec' },
+  { title: 'RO vs Tap Water', slug: 'ro-vs-tap-water' },
+  { title: 'AutoPot pH Problems', slug: 'autopot-ph-problems' },
+  { title: 'How To Buffer Coco', slug: 'how-to-buffer-coco' },
+];
+---
+
+<ArticleLayout
+  title="Understanding PPM — What It Measures and Where It Confuses People"
+  description="PPM measures dissolved solids in your nutrient solution — the same thing as EC, just in different units. Here's what it means, why there are two different scales, and when it matters."
+  silo="Equipment & Tools"
+  siloSlug="equipment"
+  tags={['PPM', 'TDS', 'Nutrients', 'EC', 'Feeding']}
+  date="June 2026"
+  tocItems={tocItems}
+  relatedInCluster={relatedInCluster}
+>
+
+  <p class="lead">PPM is the number that causes more confusion in grow forums than almost anything else. Not because the concept is complicated — it isn't — but because two different conversion scales exist and most people don't know which one their meter uses. Here's the full picture.</p>
+
+  <hr />
+
+  <h2 id="what-is-ppm">What Is PPM?</h2>
+
+  <p>PPM stands for parts per million. In the context of cannabis cultivation it measures total dissolved solids (TDS) in your nutrient solution — all the minerals, salts, and compounds dissolved in the water.</p>
+
+  <p>Pure water has 0 PPM. Tap water typically runs 100-400 PPM depending on your source. A full nutrient solution might run 600-1400 PPM depending on growth stage and feeding rate.</p>
+
+  <p>PPM doesn't tell you what's dissolved — just how much total dissolved material is present. Two solutions with identical PPM readings could have completely different nutrient profiles. PPM is a concentration measurement, not a composition measurement.</p>
+
+  <hr />
+
+  <h2 id="two-scales">The Two PPM Scales</h2>
+
+  <p>This is where the confusion lives. TDS meters don't directly measure PPM — they measure electrical conductivity (EC) and then convert to PPM using a multiplication factor. Two different factors are in common use:</p>
+
+  <div class="card-grid">
+    <div class="benefit-card">
+      <div class="label">500 Scale (Hanna)</div>
+      <p>EC × 500 = PPM<br />1.0 EC = 500 PPM<br />1.4 EC = 700 PPM<br />2.0 EC = 1000 PPM<br />Most common in North America.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">700 Scale (Truncheon)</div>
+      <p>EC × 700 = PPM<br />1.0 EC = 700 PPM<br />1.4 EC = 980 PPM<br />2.0 EC = 1400 PPM<br />Common in UK and Australia.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Same Reading, Different Numbers</div>
+      <p>A solution reading 700 PPM on the 500 scale is 1.4 EC. That same solution reads 980 PPM on the 700 scale. The solution hasn't changed — only the scale.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">How To Know Which Scale</div>
+      <p>Check your meter's manual or spec sheet. Hanna, Bluelab, and most American brands use 500. Truncheon and some European brands use 700. When in doubt, use EC.</p>
+    </div>
+  </div>
+
+  <div class="hawaii-notes">
+    <span class="label">✿ HAWAII NOTES</span>
+    <p>I stopped using PPM entirely and switched to EC for all my notes and target ranges. It eliminates the scale confusion when comparing with other growers. If someone tells me they run "800 PPM" I ask which scale before drawing any conclusions. EC is universal.</p>
+  </div>
+
+  <hr />
+
+  <h2 id="why-ec">Why I Use EC Instead</h2>
+
+  <p>EC (electrical conductivity) is the underlying measurement that PPM is derived from. Using EC directly skips the conversion step and eliminates the scale ambiguity entirely.</p>
+
+  <p>1.2 EC is 1.2 EC on any meter that's properly calibrated. There's no 500 vs 700 debate. When you share a feeding schedule or troubleshoot with another grower, EC is unambiguous.</p>
+
+  <p>The only reason to use PPM is if your meter doesn't display EC, or if you're following a nutrient line's feeding chart that's written in PPM. In that case, confirm which scale the chart uses before following it.</p>
+
+  <hr />
+
+  <h2 id="ranges">PPM Ranges By Stage</h2>
+
+  <p>These are 500 scale equivalents of the EC ranges I actually target:</p>
+
+  <ul>
+    <li><strong>Seedling / Clone:</strong> 200–400 PPM (0.4–0.8 EC)</li>
+    <li><strong>Early Veg:</strong> 400–600 PPM (0.8–1.2 EC)</li>
+    <li><strong>Late Veg:</strong> 600–900 PPM (1.2–1.8 EC)</li>
+    <li><strong>Early Flower:</strong> 700–1000 PPM (1.4–2.0 EC)</li>
+    <li><strong>Late Flower:</strong> 600–800 PPM (1.2–1.6 EC) — begin backing off</li>
+    <li><strong>Flush:</strong> 0–200 PPM (plain pH'd water)</li>
+  </ul>
+
+  <p>Use these as starting points. The plant's response tells you more than any chart.</p>
+
+  <hr />
+
+  <h2 id="tap-water">PPM of Your Source Water</h2>
+
+  <p>Your source water PPM matters because it's already contributing dissolved solids before you add any nutrients. Always measure your source water first.</p>
+
+  <ul>
+    <li><strong>RO water:</strong> 0–20 PPM. Near zero baseline. Full control over what you add.</li>
+    <li><strong>Oahu municipal water:</strong> Typically 80–200 PPM depending on source and season. Check your local water report.</li>
+    <li><strong>Well water:</strong> Highly variable. Test before using — some Hawaii well water runs 300+ PPM with high mineral content that can interfere with your nutrient ratios.</li>
+  </ul>
+
+  <p>If your tap water runs 200 PPM and you're targeting 600 PPM total, you have 400 PPM of headroom to add nutrients. If you ignore your source water PPM and mix to 600 PPM on top of 200 PPM tap, you're actually running 800 PPM — potentially stressing plants in early growth stages.</p>
+
+  <hr />
+
+  <h2 id="meters">TDS Meters</h2>
+
+  <p>TDS meters are inexpensive and reliable. A few things to look for:</p>
+
+  <ul>
+    <li><strong>Know your scale:</strong> Confirm whether the meter uses 500 or 700 before you rely on its readings</li>
+    <li><strong>Temperature compensation:</strong> EC/TDS readings change with water temperature. Automatic temperature compensation (ATC) gives more consistent readings</li>
+    <li><strong>Calibration:</strong> Use the standard calibration solution for your meter. Calibrate monthly.</li>
+    <li><strong>Combo meters:</strong> pH + EC + temp combo pens are convenient and work fine for home grows. Accuracy is slightly lower than dedicated meters but sufficient for most applications.</li>
+  </ul>
+
+  <p>For the full nutrient and feeding system in AutoPots: <a href="/autopot-guide">AutoPot Growing Guide</a>. For EC specifically: <a href="/equipment/understanding-ec">Understanding EC</a>.</p>
+
+</ArticleLayout>

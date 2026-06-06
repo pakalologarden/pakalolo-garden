@@ -1,0 +1,136 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+
+const tocItems = [
+  { id: 'why-timing-matters', label: 'Why Timing Matters' },
+  { id: 'trichome-reading', label: 'Reading Trichomes' },
+  { id: 'pistil-method', label: 'Pistil Method' },
+  { id: 'by-effect', label: 'Harvest By Desired Effect' },
+  { id: 'late-flush', label: 'Late Flush Timing' },
+  { id: 'hawaii-notes', label: 'Hawaii Notes' },
+];
+
+const relatedInCluster = [
+  { title: 'Drying Cannabis', slug: 'drying-cannabis' },
+  { title: 'Understanding VPD', slug: 'understanding-vpd' },
+  { title: 'AutoPot pH Problems', slug: 'autopot-ph-problems' },
+  { title: 'How To Buffer Coco', slug: 'how-to-buffer-coco' },
+];
+---
+
+<ArticleLayout
+  title="Harvest Timing — Reading Trichomes and Knowing When to Cut"
+  description="Harvest timing determines potency, effect profile, and flavor more than almost any other decision in the grow. Here's how to read trichomes, what to look for, and how Hawaii's climate affects the window."
+  silo="Equipment & Tools"
+  siloSlug="equipment"
+  tags={['Harvest', 'Trichomes', 'Flowering', 'Cannabis', 'Timing']}
+  date="June 2026"
+  tocItems={tocItems}
+  relatedInCluster={relatedInCluster}
+>
+
+  <p class="lead">Breeder flower times are estimates, not instructions. The same genetics can finish in 8 weeks in one environment and 10 weeks in another. The only reliable way to know when to harvest is to look at the trichomes. Everything else is a guideline.</p>
+
+  <hr />
+
+  <h2 id="why-timing-matters">Why Timing Matters</h2>
+
+  <p>Harvest timing affects three things that can't be fixed after the fact:</p>
+
+  <ul>
+    <li><strong>Cannabinoid profile:</strong> THCa converts to THC during maturation. Harvesting early means lower THC content. Harvesting very late means THC degrades to CBN — a sedating compound associated with the "couch lock" effect.</li>
+    <li><strong>Terpene content:</strong> Terpenes peak and then begin degrading. The aromatic window is real and finite. Over-ripe cannabis often loses the sharp, complex terpene profile that characterizes well-grown flower.</li>
+    <li><strong>Effect profile:</strong> Early harvest tends toward more cerebral, energetic effects. Later harvest shifts toward body effects and sedation as THC converts to CBN. You can dial the effect profile by timing the cut.</li>
+  </ul>
+
+  <hr />
+
+  <h2 id="trichome-reading">Reading Trichomes</h2>
+
+  <p>Trichomes are the resin glands covering cannabis flowers and sugar leaves. They're visible to the naked eye as frosty crystals, but you need magnification to read them accurately. A jeweler's loupe at 30-60x or a USB microscope works well.</p>
+
+  <p>Trichome development progresses through three stages:</p>
+
+  <div class="card-grid">
+    <div class="benefit-card">
+      <div class="label">Clear / Translucent</div>
+      <p>Trichomes are glassy and clear. THC production is still active. Too early to harvest — potency is not yet at peak. Plant needs more time.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Cloudy / Milky White</div>
+      <p>Trichomes have turned opaque white. THC is at peak concentration. Effect profile is typically more cerebral and energetic. Many growers prefer this window.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Amber</div>
+      <p>THC is converting to CBN. Effect shifts toward body and sedation. Some amber mixed with cloudy is common — ratio determines effect profile. Mostly amber means over-ripe for most applications.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Where To Look</div>
+      <p>Read trichomes on the buds themselves, not sugar leaves. Sugar leaf trichomes mature faster and will show amber earlier than bud trichomes — misleading if you're sampling the wrong surface.</p>
+    </div>
+  </div>
+
+  <div class="hawaii-notes">
+    <span class="label">✿ HAWAII NOTES</span>
+    <p>I use a 60x jeweler's loupe and check multiple sites on multiple buds — top cola, mid-plant, lower sites. They don't all mature at the same rate. I'm looking for the average across the plant, not the single most advanced reading. When I see mostly cloudy with 10-20% amber on the buds I'm usually ready to cut.</p>
+  </div>
+
+  <hr />
+
+  <h2 id="pistil-method">Pistil Method</h2>
+
+  <p>The pistil method is less precise than trichome reading but useful as a secondary indicator, especially if you don't have magnification.</p>
+
+  <p>Pistils are the hair-like structures on buds. They start white and turn orange/red/brown as the plant matures:</p>
+
+  <ul>
+    <li><strong>Mostly white pistils:</strong> Too early. Plant is still actively developing.</li>
+    <li><strong>50-70% orange/red:</strong> Approaching harvest window. Start checking trichomes closely.</li>
+    <li><strong>70-90% orange/red:</strong> Likely in the harvest window. Confirm with trichome reading.</li>
+    <li><strong>90%+ orange/red:</strong> Possibly past peak. Check trichomes — may be showing significant amber.</li>
+  </ul>
+
+  <p>The pistil method is a rough guide. Two plants from the same genetics in different environments can show different pistil color progression while being at the same trichome development stage. Trichomes are the definitive read.</p>
+
+  <hr />
+
+  <h2 id="by-effect">Harvest By Desired Effect</h2>
+
+  <p>Once you understand the trichome progression, you can dial your harvest timing to the effect profile you're after:</p>
+
+  <ul>
+    <li><strong>More cerebral / energetic / clear-headed:</strong> Harvest at mostly cloudy, minimal amber. Peak THC, terpenes still fresh.</li>
+    <li><strong>Balanced / full-spectrum:</strong> Harvest at mostly cloudy with 10-20% amber on buds. Good potency, beginning body component.</li>
+    <li><strong>More body / relaxing / sedating:</strong> Harvest at 20-30%+ amber. More CBN, heavier effect profile. Good for nighttime use or pain management.</li>
+  </ul>
+
+  <p>For medical patients under 329, effect profile calibration is one of the real advantages of growing your own — you control the harvest timing to match your specific needs in a way that dispensary purchasing doesn't allow.</p>
+
+  <hr />
+
+  <h2 id="late-flush">Late Flush Timing</h2>
+
+  <p>Whether to flush before harvest is debated. My practice in coco with AutoPots:</p>
+
+  <ul>
+    <li>Final 10-14 days — reduce nutrient concentration significantly, running at 0.4-0.6 EC</li>
+    <li>Final 5-7 days — plain pH'd RO water only</li>
+    <li>Watch leaves yellow naturally as the plant pulls stored nutrients — this is normal and expected</li>
+    <li>Don't panic and add nutrients when leaves yellow in late flush — that's the process working</li>
+  </ul>
+
+  <p>In living soil the flush debate is different — you're feeding soil biology, not the plant directly. Most living soil growers just water plain in the final weeks rather than aggressively flushing.</p>
+
+  <hr />
+
+  <h2 id="hawaii-notes">Harvest Timing in Hawaii</h2>
+
+  <p>Hawaii's warm temperatures and persistent humidity create two timing considerations that mainland guides don't mention:</p>
+
+  <p><strong>Botrytis pressure in late flower:</strong> Dense buds in a humid environment are vulnerable to grey mold in the final weeks. If you're seeing early botrytis signs outdoors or humidity is spiking indoors, don't wait for perfect trichome development. Harvesting 5-7 days early beats losing 30% of the plant to mold.</p>
+
+  <p><strong>Outdoor re-veg risk in spring:</strong> Photoperiod plants finishing in February-March are in the re-veg window as days lengthen. Don't push finishing genetics past their window hoping for more development — you may get re-veg foxtailing instead.</p>
+
+  <p>For drying after harvest in Hawaii's humidity: <a href="/equipment/drying-cannabis">Drying Cannabis</a>. For the full cultivation system: <a href="/autopot-guide">AutoPot Growing Guide</a>.</p>
+
+</ArticleLayout>

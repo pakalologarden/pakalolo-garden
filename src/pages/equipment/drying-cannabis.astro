@@ -1,0 +1,152 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+
+const tocItems = [
+  { id: 'why-drying-matters', label: 'Why Drying Matters' },
+  { id: 'environment', label: 'Drying Environment' },
+  { id: 'hawaii-problem', label: 'The Hawaii Problem' },
+  { id: 'process', label: 'The Process' },
+  { id: 'when-done', label: 'Knowing When It\'s Done' },
+  { id: 'wet-trim-dry-trim', label: 'Wet Trim vs Dry Trim' },
+  { id: 'curing', label: 'Moving to Cure' },
+];
+
+const relatedInCluster = [
+  { title: 'Harvest Timing', slug: 'harvest-timing' },
+  { title: 'Understanding VPD', slug: 'understanding-vpd' },
+  { title: 'Hawaiʻi Cannabis Climate Challenges', slug: 'hawaii-cannabis-climate' },
+  { title: 'How To Buffer Coco', slug: 'how-to-buffer-coco' },
+];
+---
+
+<ArticleLayout
+  title="Drying Cannabis — Getting It Right in Hawaii's Humidity"
+  description="Drying is where a lot of good harvests go wrong. Too fast and you lose terpenes. Too slow in Hawaii's humidity and you get mold. Here's the process and how to manage it in a tropical climate."
+  silo="Equipment & Tools"
+  siloSlug="equipment"
+  tags={['Drying', 'Harvest', 'Humidity', 'Hawaii', 'Post-Harvest']}
+  date="June 2026"
+  tocItems={tocItems}
+  relatedInCluster={relatedInCluster}
+>
+
+  <p class="lead">The grow doesn't end at harvest. Drying and curing determine whether all that work translates into quality flower or mediocre smoke. In Hawaii, drying is harder than almost anywhere else because the ambient humidity fights you at every step. Here's how I manage it.</p>
+
+  <hr />
+
+  <h2 id="why-drying-matters">Why Drying Matters</h2>
+
+  <p>Freshly harvested cannabis contains 75-80% water content. The goal of drying is to reduce that to roughly 10-15% — the range where the flower is smokeable, stable, and ready for the curing process.</p>
+
+  <p>How you get there matters:</p>
+
+  <ul>
+    <li><strong>Too fast:</strong> Harsh, unpleasant smoke. Terpenes haven't had time to fully develop and some volatile compounds evaporate before converting. The outside dries while the inside stays wet — then the inside molds in the jar.</li>
+    <li><strong>Too slow:</strong> Mold. In Hawaii's humidity, slow drying without active humidity management is an invitation to botrytis and other fungal growth.</li>
+    <li><strong>Just right:</strong> 10-14 days at controlled temperature and humidity. Chlorophyll breaks down properly, terpenes develop, the plant's remaining metabolic processes complete naturally.</li>
+  </ul>
+
+  <hr />
+
+  <h2 id="environment">Drying Environment</h2>
+
+  <p>Target conditions for drying:</p>
+
+  <ul>
+    <li><strong>Temperature:</strong> 60-70°F (15-21°C). Lower is better — slower drying preserves terpenes. Higher temps accelerate terpene loss.</li>
+    <li><strong>Humidity:</strong> 55-65% RH. This is the target range for a slow, controlled dry. Below 45% and it dries too fast. Above 70% and mold risk increases significantly.</li>
+    <li><strong>Airflow:</strong> Gentle, indirect. Air should be moving in the space but not blowing directly on the buds. Direct airflow dries the outside faster than the inside — uneven drying.</li>
+    <li><strong>Darkness:</strong> UV light degrades cannabinoids and terpenes. Dry in a dark space.</li>
+  </ul>
+
+  <hr />
+
+  <h2 id="hawaii-problem">The Hawaii Problem</h2>
+
+  <p>Hawaii's ambient humidity makes the 55-65% RH target difficult to achieve without active control. Depending on your location and the time of year:</p>
+
+  <ul>
+    <li>Windward Oahu — ambient RH regularly 75-90%. A passive drying setup will produce mold, not dried flower.</li>
+    <li>Leeward Oahu (Kapolei, Ewa) — drier, but still typically 60-75% RH. Close to the target range but can spike higher.</li>
+    <li>Trade wind days anywhere — lower humidity, better drying conditions. Rainy or Kona wind days push humidity up significantly.</li>
+  </ul>
+
+  <p>The solution is a dedicated drying space with active dehumidification. This is not optional in Hawaii if you want consistent quality.</p>
+
+  <div class="card-grid">
+    <div class="benefit-card">
+      <div class="label">Dedicated Tent</div>
+      <p>A 2x2 or 2x4 tent with a small dehumidifier and inline fan gives you full control over the drying environment independent of ambient conditions.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Inline Fan + Carbon Filter</div>
+      <p>Controls smell during drying and pulls humid air out of the space. Size the fan to exchange the tent volume every 1-3 minutes.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Dehumidifier</div>
+      <p>Essential in Hawaii. A small 20-30 pint dehumidifier handles a 2x4 tent in most conditions. Run it on a humidistat to maintain target RH rather than running continuously.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Hygrometer</div>
+      <p>Monitor actual RH in the drying space, not the room it's in. The tent creates its own microclimate as moisture releases from the drying buds.</p>
+    </div>
+  </div>
+
+  <div class="hawaii-notes">
+    <span class="label">✿ HAWAII NOTES</span>
+    <p>I dry in the same tent I veg in — I time my harvests so the tent is empty and available. The AC Infinity inline fan runs on low, the dehumidifier maintains 58-62% RH, and I keep the tent zipped and dark. In Kapolei this setup gives me consistent 10-14 day dries regardless of what the weather outside is doing.</p>
+  </div>
+
+  <hr />
+
+  <h2 id="process">The Process</h2>
+
+  <ol>
+    <li><strong>Harvest and trim.</strong> Whether wet or dry trimming, get large fan leaves off immediately. They hold a lot of moisture and slow drying.</li>
+    <li><strong>Hang whole branches or use drying racks.</strong> Whole branches dry more slowly and evenly. Drying racks work well for smaller harvests or wet-trimmed buds.</li>
+    <li><strong>Maintain environment.</strong> Check temp and RH daily. Adjust dehumidifier settings as the buds dry out and release less moisture into the air.</li>
+    <li><strong>Don't touch the buds.</strong> Handling during drying damages trichomes and can introduce moisture from your hands. Check them visually, not by squeezing.</li>
+    <li><strong>Check daily from day 7 onward.</strong> Drying speed varies by bud density, branch thickness, and environment. Small buds may be done in 7 days. Large dense colas can take 14+.</li>
+  </ol>
+
+  <hr />
+
+  <h2 id="when-done">Knowing When It's Done</h2>
+
+  <p>The small stem snap test is the standard check:</p>
+
+  <ul>
+    <li>Take a small stem from inside a bud. Bend it.</li>
+    <li><strong>Bends without snapping:</strong> Still too wet. Needs more time.</li>
+    <li><strong>Snaps cleanly:</strong> Ready to jar for curing.</li>
+    <li><strong>Feels bone dry and crispy:</strong> Dried too fast. Still jarrable — the cure will help, but some terpene loss has likely occurred.</li>
+  </ul>
+
+  <p>The outside of the bud feeling dry is not sufficient. The stem snap tests moisture content deeper in the bud where it matters.</p>
+
+  <hr />
+
+  <h2 id="wet-trim-dry-trim">Wet Trim vs Dry Trim</h2>
+
+  <ul>
+    <li><strong>Wet trim (at harvest):</strong> Sugar leaves come off easier when fresh. Less work during the dry. Buds dry slightly faster with less leaf mass. Can lose some trichomes to scissors.</li>
+    <li><strong>Dry trim (after drying):</strong> Sugar leaves protect trichomes during drying. Slower, slightly harder to trim. Many people prefer the end product — trichomes stay more intact.</li>
+  </ul>
+
+  <p>In Hawaii's humidity, wet trimming has a practical advantage — removing leaf mass means less surface area holding moisture in the drying space. Less moisture released = easier to maintain target RH. I wet trim for this reason.</p>
+
+  <hr />
+
+  <h2 id="curing">Moving to Cure</h2>
+
+  <p>Once the stem snaps, move flower to airtight glass jars — wide-mouth mason jars work well. Fill jars to about 75% capacity, leaving headspace for air exchange.</p>
+
+  <p>For the first two weeks, open jars once or twice daily for 15-30 minutes — this is called "burping." It releases accumulated moisture and CO2 and refreshes the oxygen in the jar. After two weeks, burping frequency drops to every few days, then weekly.</p>
+
+  <p>Minimum cure time for noticeable quality improvement is 2-3 weeks. Four to six weeks produces noticeably better flavor and smoothness. Some genetics continue improving at 3-6 months.</p>
+
+  <p>A 62% Boveda pack in each jar maintains humidity at the target level and simplifies long-term storage. Check jars periodically — if you see condensation on the inside of the glass, the flower went in too wet and needs to come out and dry further before re-jarring.</p>
+
+  <p>For harvest timing before drying: <a href="/equipment/harvest-timing">Harvest Timing</a>. For the full cultivation system: <a href="/autopot-guide">AutoPot Growing Guide</a>.</p>
+
+</ArticleLayout>

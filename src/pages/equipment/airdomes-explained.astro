@@ -1,0 +1,123 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+
+const tocItems = [
+  { id: 'what-are-airdomes', label: 'What Are AirDomes?' },
+  { id: 'how-they-work', label: 'How They Work' },
+  { id: 'why-coco', label: 'Why They Matter In Coco' },
+  { id: 'setup', label: 'Setup In AutoPots' },
+  { id: 'maintenance', label: 'Maintenance' },
+  { id: 'hawaii-notes', label: 'Hawaii Notes' },
+];
+
+const relatedInCluster = [
+  { title: 'How To Buffer Coco', slug: 'how-to-buffer-coco' },
+  { title: 'AutoPot pH Problems', slug: 'autopot-ph-problems' },
+  { title: 'Pumice vs Perlite', slug: 'pumice-vs-perlite' },
+  { title: 'Understanding VPD', slug: 'understanding-vpd' },
+];
+---
+
+<ArticleLayout
+  title="AirDomes Explained — Root Zone Oxygen in AutoPots"
+  description="AirDomes sit at the bottom of your AutoPot and pump air directly into the root zone. Here's how they work, why they matter in coco, and how to set them up correctly."
+  silo="Equipment & Tools"
+  siloSlug="equipment"
+  tags={['AirDomes', 'AutoPots', 'Root Zone', 'Oxygen', 'Coco']}
+  date="June 2026"
+  tocItems={tocItems}
+  relatedInCluster={relatedInCluster}
+>
+
+  <p class="lead">AirDomes are one of those additions that sound optional until you run a grow with them and then run one without. Root zone oxygen changes how the plant drinks, how fast the roots develop, and how consistently the medium dries between cycles. In AutoPots they're not an upgrade — they're part of the system.</p>
+
+  <hr />
+
+  <h2 id="what-are-airdomes">What Are AirDomes?</h2>
+
+  <p>An AirDome is a circular disc with a domed top and small holes across the surface. It sits at the bottom of your AutoPot tray, underneath your pot, connected to an air pump via tubing. The pump pushes air through the dome and up through the growing medium from the bottom.</p>
+
+  <p>AutoPot sells them as an accessory for their 1Pot and XL systems. They're not expensive — the dome itself is a few dollars, and a basic air pump will run multiple pots. The tubing runs from the dome up and out of the tray to a pump sitting outside the reservoir.</p>
+
+  <hr />
+
+  <h2 id="how-they-work">How They Work</h2>
+
+  <p>AutoPots are a bottom-feeding passive hydroponic system. Nutrient solution wicks up from the tray into the medium via capillary action. The plant draws what it needs. The tray refills from the reservoir when it drops below the AQUAvalve float.</p>
+
+  <p>The challenge with any bottom-feeding system is that the bottom of the medium stays consistently wet. Roots need both water and oxygen. Saturated medium at the root zone restricts oxygen and can create anaerobic conditions that slow root development and invite pathogens.</p>
+
+  <p>AirDomes solve this by pushing oxygenated air directly into the wet zone at the base of the pot. The bubbling action creates turbulence in the water film around the medium particles, improving oxygen exchange at the root surface even when the medium is moist.</p>
+
+  <div class="card-grid">
+    <div class="benefit-card">
+      <div class="label">Oxygen At The Root</div>
+      <p>Air pumped directly into the wet zone keeps dissolved oxygen levels high where roots are actively drinking. Aerobic root environment supports beneficial biology and faster uptake.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Faster Drying</div>
+      <p>The air movement accelerates evaporation from the base of the medium, creating more wet/dry cycling even in a bottom-fed system. More cycling = stronger root development.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Pathogen Resistance</div>
+      <p>Pythium and other root pathogens thrive in low-oxygen, stagnant water environments. Oxygenated root zones are significantly more resistant to root rot.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Stronger Roots</div>
+      <p>Roots respond to oxygen availability. Well-oxygenated root zones develop more lateral root mass, which increases the plant's ability to take up water and nutrients.</p>
+    </div>
+  </div>
+
+  <hr />
+
+  <h2 id="why-coco">Why They Matter In Coco</h2>
+
+  <p>Coco coir has a naturally high air-to-water ratio compared to soil — it holds both moisture and air well. But in a bottom-fed AutoPot system, the base of the coco stays consistently saturated. This partially defeats one of coco's main advantages.</p>
+
+  <p>AirDomes restore the oxygen component at the base of the medium. With an AirDome running, the bottom of the coco pot behaves more like a well-managed hand-watered coco grow — moisture is present, but oxygen is too.</p>
+
+  <p>This matters especially in the first few weeks after transplant when roots are establishing downward. The roots reach the wet zone faster and colonize it more aggressively when oxygen is present.</p>
+
+  <hr />
+
+  <h2 id="setup">Setup In AutoPots</h2>
+
+  <p>The setup is straightforward:</p>
+
+  <ol>
+    <li>Place the AirDome disc flat on the AutoPot tray before setting your pot on top</li>
+    <li>Run the tubing up through the gap between the pot and tray edge, or through a small notch if your tray has one</li>
+    <li>Connect tubing to your air pump — a basic aquarium pump handles 2-4 pots easily</li>
+    <li>Run the pump continuously — AirDomes work best with constant airflow, not intermittent</li>
+    <li>Position the air pump above the water line of your reservoir to prevent siphoning if power cuts out</li>
+  </ol>
+
+  <div class="hawaii-notes">
+    <span class="label">✿ HAWAII NOTES</span>
+    <p>I run a single dual-outlet aquarium pump for two 1Pot XL AutoPots. It runs 24/7. The pump sits on a shelf above the reservoir — if the power ever cuts, water can't siphon back through the tubing into the pump. Cheap insurance. Total cost for the air setup was under $30.</p>
+  </div>
+
+  <hr />
+
+  <h2 id="maintenance">Maintenance</h2>
+
+  <p>AirDomes require minimal maintenance but a few things to watch:</p>
+
+  <ul>
+    <li><strong>Clean between runs</strong> — mineral deposits and biofilm build up on the dome surface over time. Soak in diluted hydrogen peroxide or citric acid solution between grows.</li>
+    <li><strong>Check tubing</strong> — kinks in the tubing restrict airflow. Make sure there's a clear path from pump to dome.</li>
+    <li><strong>Listen to the pump</strong> — a pump that's struggling to push air through will get louder. Usually means a clogged dome or kinked line.</li>
+    <li><strong>Replace air stones annually</strong> — the micro-holes in the dome can clog with mineral deposits over multiple grows. Replacement domes are inexpensive.</li>
+  </ul>
+
+  <hr />
+
+  <h2 id="hawaii-notes">Running AirDomes in Hawaii</h2>
+
+  <p>Hawaii's warm ambient temperatures mean reservoir water runs warmer than in cooler climates. Warmer water holds less dissolved oxygen. This makes AirDomes more valuable here than in a climate-controlled environment where water temps stay in the low 60s°F.</p>
+
+  <p>If your reservoir sits in a warm space — which in Hawaii it likely does — the AirDome is doing more work than it would in a basement grow in Colorado. Keep the pump running continuously and consider keeping your reservoir out of direct sun to limit temperature rise.</p>
+
+  <p>For the full AutoPot system I run in Hawaii, see the <a href="/autopot-guide">AutoPot Growing Guide</a>.</p>
+
+</ArticleLayout>

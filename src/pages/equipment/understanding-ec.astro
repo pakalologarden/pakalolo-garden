@@ -1,0 +1,160 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+
+const tocItems = [
+  { id: 'what-is-ec', label: 'What Is EC?' },
+  { id: 'ec-vs-ppm', label: 'EC vs PPM' },
+  { id: 'ranges', label: 'EC Ranges By Stage' },
+  { id: 'reading-runoff', label: 'Reading Runoff EC' },
+  { id: 'problems', label: 'High and Low EC Problems' },
+  { id: 'autopots', label: 'EC In AutoPots' },
+  { id: 'meters', label: 'Meters and Calibration' },
+];
+
+const relatedInCluster = [
+  { title: 'Understanding PPM', slug: 'understanding-ppm' },
+  { title: 'AutoPot pH Problems', slug: 'autopot-ph-problems' },
+  { title: 'RO vs Tap Water', slug: 'ro-vs-tap-water' },
+  { title: 'How To Buffer Coco', slug: 'how-to-buffer-coco' },
+];
+---
+
+<ArticleLayout
+  title="Understanding EC — Electrical Conductivity for Cannabis"
+  description="EC measures the total dissolved salts in your nutrient solution. Here's what it means, what ranges to target at each growth stage, and how to read it in an AutoPot system."
+  silo="Equipment & Tools"
+  siloSlug="equipment"
+  tags={['EC', 'Nutrients', 'AutoPots', 'Coco', 'Feeding']}
+  date="June 2026"
+  tocItems={tocItems}
+  relatedInCluster={relatedInCluster}
+>
+
+  <p class="lead">EC is one of those numbers that looks complicated until you understand what it's actually measuring. It's not measuring specific nutrients — it's measuring total dissolved salts in the water. Once that clicks, reading EC becomes straightforward and useful.</p>
+
+  <hr />
+
+  <h2 id="what-is-ec">What Is EC?</h2>
+
+  <p>EC stands for Electrical Conductivity. Pure water does not conduct electricity. Dissolved salts do. The more dissolved salts in your solution, the higher the electrical conductivity — the higher the EC reading.</p>
+
+  <p>In cannabis cultivation, "dissolved salts" means your nutrients. Nitrogen, phosphorus, potassium, calcium, magnesium — all of these dissolved in water increase EC. So EC is a proxy measurement for total nutrient concentration in your solution.</p>
+
+  <p>EC is measured in millisiemens per centimeter (mS/cm). A reading of 1.0 EC means 1.0 mS/cm of conductivity. Plain RO water reads close to 0.0. Tap water typically reads 0.2-0.5 depending on your source. A full nutrient solution for cannabis in veg might read 1.2-1.8.</p>
+
+  <hr />
+
+  <h2 id="ec-vs-ppm">EC vs PPM</h2>
+
+  <p>PPM (parts per million) measures the same thing as EC — dissolved solids in water — but uses a different unit and a conversion factor. The confusion comes from the fact that there are two common PPM conversion scales:</p>
+
+  <ul>
+    <li><strong>500 scale (Hanna):</strong> EC × 500 = PPM. So 1.0 EC = 500 PPM.</li>
+    <li><strong>700 scale (Truncheon):</strong> EC × 700 = PPM. So 1.0 EC = 700 PPM.</li>
+  </ul>
+
+  <p>When someone says "I run 800 PPM" you need to know which scale they're using. 800 PPM on the 500 scale is 1.6 EC. 800 PPM on the 700 scale is about 1.14 EC. Different numbers, very different feeding rates.</p>
+
+  <p>I use EC because it's scale-independent. 1.2 EC is 1.2 EC regardless of what meter you're using. When comparing notes with other growers, always confirm which scale they're on.</p>
+
+  <div class="hawaii-notes">
+    <span class="label">✿ HAWAII NOTES</span>
+    <p>I run the 500 scale on my Apera meter and always talk in EC to avoid confusion. My transplant EC is 1.0-1.2 (500-600 PPM on the 500 scale). That's where I start every run and adjust from there based on what the plant shows me.</p>
+  </div>
+
+  <hr />
+
+  <h2 id="ranges">EC Ranges By Stage</h2>
+
+  <div class="card-grid">
+    <div class="benefit-card">
+      <div class="label">Seedling / Clone</div>
+      <p>0.4–0.8 EC. Roots are sensitive and limited. Low concentration prevents salt stress while the plant establishes. RO water with minimal nutrients.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Early Veg</div>
+      <p>0.8–1.2 EC. Roots are establishing in the medium. Gradually increase as root mass develops and the plant begins drinking consistently.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Late Veg</div>
+      <p>1.2–1.8 EC. Plant is drinking heavily and pushing growth. Higher nitrogen demand. Can push to 2.0 EC with vigorous plants in healthy root zones.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Flower</div>
+      <p>1.4–2.0 EC. Nutrient demand is high in early-mid flower. Back off nitrogen, increase phosphorus and potassium. Watch runoff EC in late flower.</p>
+    </div>
+  </div>
+
+  <p>These are starting ranges, not rules. Plant response tells you more than any chart. Leaf color, growth rate, and runoff EC all give you information. The ranges above are where I start — I adjust based on what I see.</p>
+
+  <hr />
+
+  <h2 id="reading-runoff">Reading Runoff EC</h2>
+
+  <p>Runoff EC tells you what's happening in the root zone, not just what you're putting in. The relationship between input EC and runoff EC tells you whether salts are accumulating or being consumed.</p>
+
+  <ul>
+    <li><strong>Runoff EC close to input EC:</strong> Normal. The medium is passing nutrients through without major accumulation.</li>
+    <li><strong>Runoff EC significantly higher than input:</strong> Salt buildup in the medium. The plant isn't consuming nutrients as fast as you're adding them. Flush or reduce input EC.</li>
+    <li><strong>Runoff EC significantly lower than input:</strong> The plant is consuming heavily. May need to increase input EC slightly, or the reading may reflect a clean, well-flushed medium.</li>
+  </ul>
+
+  <p>In coco, I target runoff EC within 0.3-0.5 of my input EC as a healthy range. Much higher than that and I'm concerned about accumulation.</p>
+
+  <hr />
+
+  <h2 id="problems">High and Low EC Problems</h2>
+
+  <p><strong>High EC (nutrient excess / salt stress):</strong></p>
+  <ul>
+    <li>Leaf tip burn — the classic sign, starting at the very tips of fan leaves</li>
+    <li>Dark green leaves, clawing downward (nitrogen toxicity)</li>
+    <li>Slow growth despite adequate feeding — osmotic stress making it harder for roots to absorb water</li>
+    <li>Fix: flush with plain pH'd water, reduce input EC</li>
+  </ul>
+
+  <p><strong>Low EC (nutrient deficiency):</strong></p>
+  <ul>
+    <li>Pale or yellowing leaves, starting with older growth</li>
+    <li>Slow growth, small internodal spacing</li>
+    <li>Plants drinking heavily but not growing — taking water but not enough nutrients</li>
+    <li>Fix: increase input EC gradually, check pH first</li>
+  </ul>
+
+  <hr />
+
+  <h2 id="autopots">EC In AutoPots</h2>
+
+  <p>AutoPots add a consideration that hand-watering doesn't have — the reservoir EC can drift over time as water evaporates and the plant consumes nutrients selectively.</p>
+
+  <ul>
+    <li>Water evaporates from the reservoir, concentrating the remaining nutrients — EC rises</li>
+    <li>The plant may consume certain nutrients faster than others, changing the ratio in the reservoir</li>
+    <li>Check reservoir EC weekly and top up with fresh nutrient solution at your target EC</li>
+    <li>Don't just add plain water to a reservoir that's low — you're diluting nutrients and throwing off ratios</li>
+  </ul>
+
+  <div class="hawaii-notes">
+    <span class="label">✿ HAWAII NOTES</span>
+    <p>In Hawaii's heat, reservoir evaporation is real. I check my reservoir EC every 3-4 days in summer. If it's climbed more than 0.3 above my target I top up with fresh solution at my target EC, not plain water. Keeping it consistent matters more than perfect precision.</p>
+  </div>
+
+  <hr />
+
+  <h2 id="meters">Meters and Calibration</h2>
+
+  <p>Any decent EC meter will work. I use an Apera EC60. Bluelab makes reliable meters. The cheap combo pens (pH + EC + temp) from Amazon are fine for hobbyist use if you calibrate them regularly.</p>
+
+  <p>Calibration matters:</p>
+  <ul>
+    <li>EC meters use a calibration solution — typically 1.41 mS/cm standard solution</li>
+    <li>Calibrate monthly or when readings seem off</li>
+    <li>Rinse the probe with clean water before and after each use</li>
+    <li>Store probes wet or per manufacturer instructions — dry storage damages the electrode</li>
+  </ul>
+
+  <p>A meter that hasn't been calibrated in six months is giving you numbers you can't trust. The calibration process takes two minutes. Do it regularly.</p>
+
+  <p>For the full feeding and AutoPot system: <a href="/autopot-guide">AutoPot Growing Guide</a>.</p>
+
+</ArticleLayout>
