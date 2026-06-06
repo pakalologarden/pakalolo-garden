@@ -1,0 +1,284 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+
+const tocItems = [
+  { id: 'what-is-329', label: 'What Is HRS §329' },
+  { id: 'who-qualifies', label: 'Who Can Grow' },
+  { id: 'plant-counts', label: 'Plant Count Rules' },
+  { id: 'plant-tagging', label: 'Plant Tagging' },
+  { id: 'caregiver', label: 'Caregiver Grows' },
+  { id: 'where-you-can-grow', label: 'Where You Can Grow' },
+  { id: 'possession-limits', label: 'Possession Limits' },
+  { id: 'what-you-cannot-do', label: 'What You Cannot Do' },
+  { id: 'penalties', label: 'Penalties Outside 329' },
+  { id: 'registration', label: 'Getting Your Card' },
+  { id: 'hawaii-reality', label: 'Hawaii Growing Reality' },
+  { id: 'getting-started', label: 'Getting Started' },
+];
+
+const relatedInCluster = [
+  { title: 'Growing Cannabis in Hawaiʻi', slug: 'growing-cannabis-hawaii' },
+  { title: 'Outdoor Cannabis Hawaiʻi', slug: 'outdoor-cannabis-hawaii' },
+  { title: 'Hawaiʻi Cannabis Climate Challenges', slug: 'hawaii-cannabis-climate' },
+  { title: 'Pest Pressure in Hawaiʻi', slug: 'cannabis-pest-pressure-hawaii' },
+];
+---
+
+<ArticleLayout
+  title="329 Homegrow Hawaiʻi — What Medical Patients Can Actually Grow"
+  description="A practical breakdown of Hawaii HRS §329 homegrow rights for medical cannabis patients. Plant counts, tagging rules, possession limits, caregiver rules, and what registration actually looks like."
+  silo="Hawaiʻi Growing"
+  siloSlug="hawaii-growing"
+  tags={['329', 'Homegrow', 'Hawaii', 'Medical Cannabis', 'Legal']}
+  date="June 2026"
+  tocItems={tocItems}
+  relatedInCluster={relatedInCluster}
+>
+
+  <p class="lead">Hawaii has had a medical cannabis homegrow program since 2000. It is one of the oldest in the country. Most patients I talk to don't fully understand what they're actually allowed to do — or they're working off outdated information. This is my attempt to write a clear, practical breakdown of what the law actually says.</p>
+
+  <p>I am not a lawyer. This is not legal advice. Laws change — and Hawaii cannabis law has changed repeatedly in recent years. Always verify current rules with the <a href="https://health.hawaii.gov/medicalcannabisregistry/" target="_blank" rel="noopener">Hawaii Department of Health Medical Cannabis Registry</a> before making decisions based on anything here.</p>
+
+  <p>That said — I grow under 329. I've read the statute. Here's what I know.</p>
+
+  <hr />
+
+  <h2 id="what-is-329">What Is HRS §329</h2>
+
+  <p>Hawaii Revised Statutes §329 is the section of state law covering controlled substances. The medical cannabis program lives under §329-122 and surrounding sections. When people say "329" in a Hawaii growing context, they mean the medical cannabis patient registry program.</p>
+
+  <p>The administrative rules that govern the registry program are in <strong>Chapter 11-160, HAR</strong>. That's the document that covers patient registration, grow site requirements, plant tagging, and caregiver rules. The dispensary rules are separate — Chapter 11-850.</p>
+
+  <div class="hawaii-notes">
+    <span class="label">✿ HAWAII NOTES</span>
+    <p><strong>Important — Act 241 SLH 2025, Part IV:</strong> Starting January 1, 2028, cultivation of cannabis without a cannabis cultivator license issued by DOH will be prohibited. What this means for patient homegrow after that date is still being worked out. If you're a patient, watch this space. The program as it exists today has a legislative sunset coming.</p>
+  </div>
+
+  <hr />
+
+  <h2 id="who-qualifies">Who Can Grow Under 329</h2>
+
+  <p>To legally homegrow under the medical program you need to be a registered patient with the Hawaii Department of Health Medical Cannabis Registry. That means:</p>
+
+  <ul>
+    <li>You are a Hawaii resident</li>
+    <li>You have a qualifying medical condition</li>
+    <li>A licensed Hawaii physician or APRN has certified your condition</li>
+    <li>You have a valid 329 card from the DOH with a grow site listed on it</li>
+  </ul>
+
+  <p>Qualifying conditions include chronic pain, PTSD, cancer, epilepsy, multiple sclerosis, glaucoma, HIV/AIDS, Crohn's disease, rheumatoid arthritis, ALS, lupus, and others. The list has expanded over time. If you have a debilitating condition not on the list, there is a petition process to request inclusion.</p>
+
+  <p>The grow site must appear on your registration card. You cannot grow at an address that isn't on your card.</p>
+
+  <hr />
+
+  <h2 id="plant-counts">Plant Count Rules</h2>
+
+  <p>Under HRS §329, "adequate supply" is defined as:</p>
+
+  <blockquote>
+    <strong>Not more than ten cannabis plants, whether immature or mature, and four ounces of usable cannabis at any given time.</strong>
+  </blockquote>
+
+  <div class="card-grid">
+    <div class="benefit-card">
+      <div class="label">10 Plants Total</div>
+      <p>The limit is 10 plants at your registered grow location. All stages count — seedlings, clones, veg, and flower. No separate count for immature vs. mature.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Location-Based</div>
+      <p>The 10-plant limit applies to the <strong>registered address</strong>, not the individual. Two patients at the same address does not mean 20 plants. It means 10 total at that location.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Shared With Caregiver</div>
+      <p>The 10 plants are jointly possessed between the patient and their primary caregiver. The total across both people at that location is still 10.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Who Can Touch Them</div>
+      <p>Only the registered patient and their one designated primary caregiver listed on the 329 card may handle the plants. No one else — regardless of their relationship to you.</p>
+    </div>
+  </div>
+
+  <div class="hawaii-notes">
+    <span class="label">✿ HAWAII NOTES</span>
+    <p>I run a 10-plant rotation at my home studio in Kapolei. With AutoPots I keep 4-6 plants in active flower and the rest in varying stages of veg and clone development. You can work within 10 plants if you plan the rotation deliberately. It requires more attention to timing, but it's workable.</p>
+  </div>
+
+  <hr />
+
+  <h2 id="plant-tagging">Plant Tagging — Required</h2>
+
+  <p>This is one people miss. Under Section 11-160-31(b) of the Hawaii Administrative Rules:</p>
+
+  <blockquote>
+    <strong>The qualifying patient or the primary caregiver shall have a legible identification tag on each cannabis plant being cultivated for the qualifying patient.</strong>
+  </blockquote>
+
+  <p>Every plant must be tagged with:</p>
+
+  <ul>
+    <li>Your 329 registration number</li>
+    <li>Your registration expiration date</li>
+  </ul>
+
+  <p>The DOH has published <a href="https://health.hawaii.gov/medicalcannabisregistry/files/2015/08/Tags-6-29-17-FINAL.pdf" target="_blank" rel="noopener">tagging guidelines here</a>. Tags need to be legible. If you get an inspection or encounter law enforcement at your grow site, untagged plants are a problem even if everything else is compliant.</p>
+
+  <div class="hawaii-notes">
+    <span class="label">✿ HAWAII NOTES</span>
+    <p>I use waterproof plant tags zip-tied to the main stem at soil level. The card stays in a small weatherproof sleeve. Cheap, easy, and clearly visible. Don't skip this step.</p>
+  </div>
+
+  <hr />
+
+  <h2 id="caregiver">Caregiver Grows</h2>
+
+  <p>A registered primary caregiver can grow on behalf of a patient. Under <strong>Act 046 SLH 2025</strong> — effective retroactive to January 1, 2025 — caregiver rules were significantly updated:</p>
+
+  <ul>
+    <li>A caregiver can now be responsible for <strong>up to 5 qualifying patients</strong> (previously limited to 1)</li>
+    <li>Caregivers are authorized to cultivate cannabis for their qualifying patients</li>
+    <li>Each cultivation location may be used to grow for <strong>not more than 5 qualifying patients</strong></li>
+    <li>The caregiver must be listed on each patient's registration card</li>
+    <li>The caregiver cannot use cannabis themselves unless they are also a registered patient</li>
+  </ul>
+
+  <p>If you want a family member to grow for you, that person needs to be formally registered as your primary caregiver with the DOH. Informal arrangements are not protected under the law.</p>
+
+  <hr />
+
+  <h2 id="where-you-can-grow">Where You Can Grow</h2>
+
+  <p>Your grow site must be listed on your registration card. The law requires your grow be:</p>
+
+  <ul>
+    <li>In an <strong>enclosed, locked space</strong></li>
+    <li>Not visible from a public place without visual enhancement (binoculars, aircraft, etc.)</li>
+    <li>Not accessible to minors</li>
+  </ul>
+
+  <div class="hawaii-notes">
+    <span class="label">✿ HAWAII NOTES</span>
+    <p>The visibility rule matters more in Hawaii than people realize. We have constant aerial activity — military flights, helicopters, tourist tours over residential areas. If you're growing outdoors, even in your own backyard, it needs to be genuinely not visible from above. A covered structure isn't optional. It's compliance.</p>
+  </div>
+
+  <p>Renters face additional complexity. The law does not prohibit landlords from restricting cannabis cultivation on their properties. Your lease may prohibit growing regardless of your 329 status. Check your lease carefully before you set up anything.</p>
+
+  <hr />
+
+  <h2 id="possession-limits">Possession Limits</h2>
+
+  <p>A registered patient or caregiver can possess up to <strong>4 ounces of usable cannabis</strong> at any time — jointly between patient and caregiver.</p>
+
+  <p>Important: the 4-ounce limit includes <strong>manufactured cannabis products</strong> — edibles, tinctures, capsules. The cannabis content in those products is calculated and counts toward your 4-ounce total. It's not 4 ounces of flower plus whatever edibles you have. It's 4 ounces total, calculated across all forms.</p>
+
+  <p>Cannabis from your home grow cannot be sold, transferred, or gifted. The homegrow program is strictly for personal medical use between a registered patient and their registered caregiver.</p>
+
+  <hr />
+
+  <h2 id="what-you-cannot-do">What You Cannot Do</h2>
+
+  <p>Being a registered patient does not give you unlimited rights. These are still prohibited regardless of 329 status:</p>
+
+  <ul>
+    <li><strong>Selling cannabis</strong> — including between patients</li>
+    <li><strong>Gifting or transferring</strong> to non-registered individuals</li>
+    <li><strong>Allowing anyone other than your registered caregiver</strong> to handle your plants or usable cannabis</li>
+    <li><strong>Using cannabis in public</strong> — vehicles, parks, beaches, any publicly accessible space (see HRS 328J, Hawaii's Smoke Free Law)</li>
+    <li><strong>Growing at an unregistered address</strong></li>
+    <li><strong>Growing more than 10 plants</strong> at your registered location</li>
+    <li><strong>Possessing more than 4 ounces</strong> of usable cannabis</strong></li>
+    <li><strong>Driving under the influence</strong></li>
+    <li><strong>Consuming on federal land</strong> — national parks, military installations, certain beaches and trails</li>
+  </ul>
+
+  <div class="hawaii-notes">
+    <span class="label">✿ HAWAII NOTES</span>
+    <p>Federal land comes up constantly in Hawaii because so much of the island is federally managed — military bases, national parks, certain trails and beaches. Your 329 card provides zero protection on federal land. This is not a gray area.</p>
+  </div>
+
+  <hr />
+
+  <h2 id="penalties">Penalties Outside 329</h2>
+
+  <p>If you're cultivating or possessing cannabis outside the protections of the medical program, here's what HRS 712 says:</p>
+
+  <ul>
+    <li><strong>Any cannabis possession</strong> (unregistered) — petty misdemeanor (HRS 712-1249)</li>
+    <li><strong>1 oz or more</strong> — misdemeanor (HRS 712-1248)</li>
+    <li><strong>25–49 plants</strong> — Class C felony (HRS 712-1247)</li>
+    <li><strong>50+ plants</strong> — Class B felony (HRS 712-1249.5)</li>
+    <li><strong>100+ plants</strong> — Class A felony (HRS 712-1249.4)</li>
+    <li><strong>Cultivating on someone else's land without permission</strong> — Class B felony regardless of plant count</li>
+  </ul>
+
+  <p>The 329 program provides an affirmative defense against these charges — but only if you are fully compliant. Untagged plants, unregistered grow site, expired card, or plants handled by someone other than your registered caregiver can all compromise that protection.</p>
+
+  <hr />
+
+  <h2 id="registration">Getting Your Card</h2>
+
+  <p>Registration goes through the Hawaii Department of Health:</p>
+
+  <ol>
+    <li>Get a written certification from a licensed Hawaii physician or APRN confirming your qualifying condition. As of Act 241 SLH 2025, telehealth certifications are allowed after an initial in-person relationship is established.</li>
+    <li>Complete the DOH Medical Cannabis Registry application online</li>
+    <li>Pay the registration fee (check the current DOH fee schedule)</li>
+    <li>Receive your card — grow site will be listed on it</li>
+    <li>Tag every plant with your registration number and expiration date before cultivation begins</li>
+  </ol>
+
+  <p>Cards renew annually unless your provider has authorized a 3-year certification under Act 108 SLH 2023.</p>
+
+  <p>Current fees, forms, qualifying conditions, and provider lookup: <a href="https://health.hawaii.gov/medicalcannabisregistry/" target="_blank" rel="noopener">health.hawaii.gov/medicalcannabisregistry</a></p>
+
+  <hr />
+
+  <h2 id="hawaii-reality">Hawaii Growing Reality</h2>
+
+  <p>Having the legal right to grow and actually growing well in Hawaii are two different things.</p>
+
+  <div class="card-grid">
+    <div class="benefit-card">
+      <div class="label">Humidity</div>
+      <p>Hawaii's baseline humidity is brutal for flower. Botrytis will find you outdoors. A dehumidifier indoors is not optional if you want quality — it's the cost of doing business here.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Pest Pressure</div>
+      <p>Thrips, russet mites, fungus gnats, aphids — all year-round because we never get a frost to reset populations. IPM is a continuous practice, not a one-time event.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Light Cycle</div>
+      <p>Hawaii sits at roughly 21° north latitude. Day length variation is smaller than the mainland. Outdoor autos or light deprivation for photoperiods are both worth understanding here.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Salt Air</div>
+      <p>If you're near the coast, salt air is a real stressor. Coastal outdoor grows face leaf damage and accelerated weathering. Even a few blocks from the water makes a measurable difference.</p>
+    </div>
+  </div>
+
+  <div class="hawaii-notes">
+    <span class="label">✿ HAWAII NOTES</span>
+    <p>My honest take: if you're a new patient figuring out where to start, indoor growing with a small tent is more predictable than outdoor in Hawaii. You control the environment. Outdoor is cheaper to set up but the variables — humidity, pests, visibility compliance — add real complexity. Start where you have the most control, then expand once you understand the plant.</p>
+  </div>
+
+  <hr />
+
+  <h2 id="getting-started">Getting Started</h2>
+
+  <ol>
+    <li><strong>Get your card first.</strong> Don't start growing before registration is complete. The law only protects registered patients with a grow site on their card.</li>
+    <li><strong>Set up your space correctly.</strong> Locked, enclosed, not visible. Get the legal foundation right before you put a plant in the ground.</li>
+    <li><strong>Tag every plant.</strong> Registration number and expiration date. Waterproof tag, zip-tied to the stem. Do it before anything else.</li>
+    <li><strong>Start small.</strong> You have 10 plants to work with. Two or three plants while you learn is smarter than ten plants you don't know how to manage.</li>
+    <li><strong>Choose your medium deliberately.</strong> Coco and AutoPots is what I run — consistent results with less daily intervention. Living soil is another solid option.</li>
+    <li><strong>Dial in environment before chasing genetics.</strong> Good plants in a bad environment will disappoint every time.</li>
+  </ol>
+
+  <p>The rest of this site documents what I'm actually running — what's working, what failed, what I'm testing. If you're just getting started, the <a href="/autopot-guide">AutoPot Growing Guide</a> covers the cultivation system I use in detail.</p>
+
+  <hr />
+
+  <p><em>Disclaimer: This page is for educational purposes only. Not legal advice. Hawaii cannabis law has changed frequently and continues to evolve. Verify current rules with the Hawaii Department of Health and consult a licensed attorney for specific legal questions.</em></p>
+
+</ArticleLayout>
