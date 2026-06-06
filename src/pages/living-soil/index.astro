@@ -1,21 +1,65 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const articles = [
+  {
+    title: 'Living Soil Mix Recipe Hawaii',
+    slug: 'living-soil-mix-recipe-hawaii',
+    desc: 'My exact base recipe — 4 cu ft peat, 40% perlite, full mineral stack. Real measurements.',
+    tags: ['Recipe', 'Hawaii', 'Minerals'],
+  },
+  {
+    title: 'Living Amendments Mix',
+    slug: 'living-amendments-mix-hawaii',
+    desc: 'Top dressing recipe with two application strategies — slow & steady or heavy charge.',
+    tags: ['Top Dressing', 'Amendments', 'Recipe'],
+  },
+];
 ---
 <BaseLayout
-  title="Living Soil Hawaii"
-  description="Building and maintaining living soil in a tropical climate. Field notes from Oahu."
+  title="Living Soil Hawaii — Guides and Recipes"
+  description="Living soil guides and recipes from an Oahu garden. Real mixes, real amendments, real results in a tropical climate."
 >
   <div class="hero">
     <div class="hero-inner">
       <div class="breadcrumb">Living Soil</div>
       <h1>Living Soil<br /><em>Hawaii</em></h1>
-      <p class="hero-sub">Building and maintaining living soil in a tropical climate.</p>
+      <p class="hero-sub">Building and maintaining living soil in a tropical climate. Real mixes, real amendments, real results.</p>
+      <div class="meta-row">
+        <span class="meta-tag">Soil Recipes</span>
+        <span class="meta-tag">Amendments</span>
+        <span class="meta-tag">Hawaii</span>
+      </div>
     </div>
   </div>
+
   <div class="hibiscus-divider">✿ &nbsp; ✿ &nbsp; ✿</div>
-  <div style="max-width: var(--max-w); margin: 0 auto; padding: 4rem 2rem; text-align: center;">
-    <p style="font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--gold);">Coming Soon</p>
-    <p style="margin-top: 1rem; color: var(--muted);">Pages building now. Check back soon.</p>
-    <a href="/" style="display: inline-block; margin-top: 2rem; font-family: var(--font-mono); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--forest); border-bottom: 1px solid var(--gold); padding-bottom: 2px; text-decoration: none;">← Back To Home</a>
+
+  <div style="max-width: var(--max-w); margin: 0 auto; padding: 3rem 2rem;">
+    <div style="margin-bottom: 2rem;">
+      <span style="font-family: var(--font-mono); font-size: 0.58rem; text-transform: uppercase; letter-spacing: 0.18em; color: var(--gold);">Living Soil Articles</span>
+      <h2 style="font-family: var(--font-display); font-weight: 500; font-size: 2rem; color: var(--forest); margin-top: 0.5rem;">Everything Living Soil</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1rem;">
+      {articles.map(article => (
+        <a href={`/living-soil/${article.slug}`} style="text-decoration: none;">
+          <div style="background: white; border: 1px solid var(--border); border-top: 2px solid var(--gold); padding: 1.5rem; border-radius: 2px; height: 100%;">
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.75rem;">
+              {article.tags.map(tag => (
+                <span style="font-family: var(--font-mono); font-size: 0.55rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold);">{tag}</span>
+              ))}
+            </div>
+            <h3 style="font-family: var(--font-display); font-weight: 500; font-size: 1.4rem; color: var(--forest); margin-bottom: 0.5rem; line-height: 1.2;">{article.title}</h3>
+            <p style="font-size: 0.85rem; color: var(--muted); line-height: 1.6; margin: 0;">{article.desc}</p>
+          </div>
+        </a>
+      ))}
+    </div>
+
+    <div style="margin-top: 3rem; padding: 2rem; background: var(--cream-dim); border: 1px solid var(--border); border-radius: 2px; text-align: center;">
+      <p style="font-family: var(--font-mono); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.16em; color: var(--gold); margin-bottom: 0.5rem;">More Coming</p>
+      <p style="font-size: 0.9rem; color: var(--muted);">Living Soil vs Coco, Reusing Living Soil, Outdoor Living Soil Hawaii, and more building now.</p>
+    </div>
   </div>
+
 </BaseLayout>

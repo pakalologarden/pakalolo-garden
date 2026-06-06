@@ -1,21 +1,79 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const articles = [
+  {
+    title: 'Korean Natural Farming Hawaii',
+    slug: 'knf-hawaii',
+    desc: 'What KNF is, its Hawaii roots, and how I actually use it in my garden.',
+    tags: ['KNF', 'Hawaii', 'Living Soil'],
+  },
+  {
+    title: 'LAB Recipe Hawaii',
+    slug: 'lab-recipe-hawaii',
+    desc: 'My exact LAB process — Costco A2 milk, rice wash, real ratios and application rates.',
+    tags: ['LAB', 'Recipe', 'Hawaii'],
+  },
+  {
+    title: 'OHN Recipe Hawaii',
+    slug: 'ohn-recipe-hawaii',
+    desc: 'Garlic, ginger, turmeric, cinnamon — alcohol extraction, brown sugar preservation.',
+    tags: ['OHN', 'Recipe', 'IPM'],
+  },
+  {
+    title: 'FPJ Recipe Hawaii',
+    slug: 'fpj-recipe-hawaii',
+    desc: 'Two versions — FPJ Veg from fast-growing greens, FPJ Terp from tropical fruits.',
+    tags: ['FPJ', 'Recipe', 'Hawaii'],
+  },
+  {
+    title: 'WCA Recipe Hawaii',
+    slug: 'wca-recipe-hawaii',
+    desc: 'Water-soluble calcium from roasted eggshells and bone — brown rice vinegar extraction.',
+    tags: ['WCA', 'CalPhos', 'Calcium'],
+  },
+];
 ---
 <BaseLayout
-  title="KNF Hawaii — Korean Natural Farming"
-  description="Korean Natural Farming guides, recipes, and field notes from Hawaii."
+  title="KNF Hawaii — Korean Natural Farming Guides"
+  description="Korean Natural Farming guides, recipes, and field notes from an Oahu garden. LAB, OHN, FPJ, WCA — real recipes with real ratios."
 >
   <div class="hero">
     <div class="hero-inner">
       <div class="breadcrumb">KNF</div>
-      <h1>Korean Natural Farming<br /><em>Hawaii</em></h1>
-      <p class="hero-sub">Guides, recipes, and field notes on KNF inputs from an Oahu garden.</p>
+      <h1>Korean Natural<br /><em>Farming Hawaii</em></h1>
+      <p class="hero-sub">Recipes, field notes, and real-world KNF practice from an Oahu garden. Not textbook KNF — practical KNF.</p>
+      <div class="meta-row">
+        <span class="meta-tag">LAB</span>
+        <span class="meta-tag">OHN</span>
+        <span class="meta-tag">FPJ</span>
+        <span class="meta-tag">WCA</span>
+      </div>
     </div>
   </div>
+
   <div class="hibiscus-divider">✿ &nbsp; ✿ &nbsp; ✿</div>
-  <div style="max-width: var(--max-w); margin: 0 auto; padding: 4rem 2rem; text-align: center;">
-    <p style="font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--gold);">Coming Soon</p>
-    <p style="margin-top: 1rem; color: var(--muted);">Pages building now. Check back soon.</p>
-    <a href="/" style="display: inline-block; margin-top: 2rem; font-family: var(--font-mono); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--forest); border-bottom: 1px solid var(--gold); padding-bottom: 2px; text-decoration: none;">← Back To Home</a>
+
+  <div style="max-width: var(--max-w); margin: 0 auto; padding: 3rem 2rem;">
+    <div style="margin-bottom: 2rem;">
+      <span style="font-family: var(--font-mono); font-size: 0.58rem; text-transform: uppercase; letter-spacing: 0.18em; color: var(--gold);">KNF Articles</span>
+      <h2 style="font-family: var(--font-display); font-weight: 500; font-size: 2rem; color: var(--forest); margin-top: 0.5rem;">Everything KNF</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1rem;">
+      {articles.map(article => (
+        <a href={`/knf/${article.slug}`} style="text-decoration: none;">
+          <div style="background: white; border: 1px solid var(--border); border-top: 2px solid var(--gold); padding: 1.5rem; border-radius: 2px; height: 100%;">
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.75rem;">
+              {article.tags.map(tag => (
+                <span style="font-family: var(--font-mono); font-size: 0.55rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold);">{tag}</span>
+              ))}
+            </div>
+            <h3 style="font-family: var(--font-display); font-weight: 500; font-size: 1.4rem; color: var(--forest); margin-bottom: 0.5rem; line-height: 1.2;">{article.title}</h3>
+            <p style="font-size: 0.85rem; color: var(--muted); line-height: 1.6; margin: 0;">{article.desc}</p>
+          </div>
+        </a>
+      ))}
+    </div>
   </div>
+
 </BaseLayout>
