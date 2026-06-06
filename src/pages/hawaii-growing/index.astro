@@ -1,21 +1,119 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
+
 <BaseLayout
-  title="Growing Cannabis In Hawaii"
-  description="Oahu-specific growing conditions, climate challenges, and 329 education."
+  title="Hawaiʻi Growing — Cannabis Cultivation on Oahu"
+  description="Oahu-specific cannabis cultivation guides. 329 homegrow education, outdoor growing, climate challenges, pest pressure, and field notes from an active Hawaii garden."
 >
+
   <div class="hero">
     <div class="hero-inner">
       <div class="breadcrumb">Hawaii Growing</div>
-      <h1>Growing Cannabis<br /><em>In Hawaii</em></h1>
+      <h1>Growing Cannabis<br /><em>In Hawaiʻi</em></h1>
       <p class="hero-sub">Oahu-specific growing conditions, climate challenges, and 329 education.</p>
+      <div class="meta-row">
+        <span class="meta-tag">329</span>
+        <span class="meta-tag">Outdoor</span>
+        <span class="meta-tag">Climate</span>
+        <span class="meta-tag">IPM</span>
+        <span class="meta-tag">Oahu</span>
+      </div>
     </div>
   </div>
+
   <div class="hibiscus-divider">✿ &nbsp; ✿ &nbsp; ✿</div>
-  <div style="max-width: var(--max-w); margin: 0 auto; padding: 4rem 2rem; text-align: center;">
-    <p style="font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--gold);">Coming Soon</p>
-    <p style="margin-top: 1rem; color: var(--muted);">Pages building now. Check back soon.</p>
-    <a href="/" style="display: inline-block; margin-top: 2rem; font-family: var(--font-mono); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--forest); border-bottom: 1px solid var(--gold); padding-bottom: 2px; text-decoration: none;">← Back To Home</a>
+
+  <div class="silo-index">
+    <p class="lead">Hawaii cannabis cultivation comes with challenges most mainland guides never address — persistent humidity, year-round pest pressure, compressed light cycles, salt air, and a legal framework unique to the state. These pages document what I've learned growing here.</p>
+
+    <div class="article-list">
+
+      <a href="/hawaii-growing/329-homegrow-hawaii" class="article-card">
+        <div class="article-card-label">329 · Legal</div>
+        <h2>329 Homegrow Hawaiʻi</h2>
+        <p>What medical patients can actually grow. Plant counts, tagging requirements, caregiver rules, possession limits, and the 2028 sunset to know about.</p>
+      </a>
+
+      <a href="/hawaii-growing/growing-cannabis-hawaii" class="article-card">
+        <div class="article-card-label">Overview</div>
+        <h2>Growing Cannabis in Hawaiʻi</h2>
+        <p>What's different about cultivating cannabis in Hawaii. Indoor vs outdoor, climate basics, growing systems, water quality, and light cycle considerations.</p>
+      </a>
+
+      <a href="/hawaii-growing/outdoor-cannabis-hawaii" class="article-card">
+        <div class="article-card-label">Outdoor</div>
+        <h2>Outdoor Cannabis Hawaiʻi</h2>
+        <p>Location selection, timing, genetics, soil, watering, IPM, and staying compliant with 329 outdoors. What actually works here.</p>
+      </a>
+
+      <a href="/hawaii-growing/hawaii-cannabis-climate" class="article-card">
+        <div class="article-card-label">Climate</div>
+        <h2>Hawaiʻi Cannabis Climate Challenges</h2>
+        <p>Humidity, temperature, wind, rainfall by region, UV intensity, and salt air. What the guides don't tell you about growing in Hawaii.</p>
+      </a>
+
+      <a href="/hawaii-growing/cannabis-pest-pressure-hawaii" class="article-card">
+        <div class="article-card-label">IPM</div>
+        <h2>Cannabis Pest Pressure in Hawaiʻi</h2>
+        <p>Year-round IPM in a climate that never resets. Thrips, russet mites, fungus gnats, caterpillars, botrytis — and the system that stays ahead of it.</p>
+      </a>
+
+    </div>
   </div>
+
 </BaseLayout>
+
+<style>
+  .silo-index {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 3rem 2rem 5rem;
+  }
+
+  .article-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+  }
+
+  .article-card {
+    display: block;
+    padding: 1.75rem 2rem;
+    border: 1px solid var(--gold);
+    border-left: 4px solid var(--gold);
+    background: var(--cream);
+    text-decoration: none;
+    color: var(--charcoal);
+    transition: background 0.2s ease;
+  }
+
+  .article-card:hover {
+    background: #ede8dd;
+  }
+
+  .article-card-label {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+  }
+
+  .article-card h2 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    color: var(--forest);
+    margin: 0 0 0.5rem;
+    font-weight: 500;
+  }
+
+  .article-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+    color: var(--charcoal);
+  }
+</style>
