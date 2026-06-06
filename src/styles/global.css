@@ -496,5 +496,5 @@ footer {
   .nav-links { display: none; }
   .email-form { flex-direction: column; }
   .footer-inner { grid-template-columns: 1fr; gap: 1.5rem; }
-  .hero::before { display: none; }
+  .hero::before { background-size: 260px auto; background-position: right -20px bottom; opacity: 0.12; }
 }
