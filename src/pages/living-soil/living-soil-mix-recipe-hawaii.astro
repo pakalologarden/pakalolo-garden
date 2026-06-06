@@ -1,0 +1,139 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+
+const tocItems = [
+  { id: 'overview', label: 'The Mix Overview' },
+  { id: 'base', label: 'Base Structure' },
+  { id: 'biology', label: 'Biology Layer' },
+  { id: 'minerals', label: 'Dry Amendments' },
+  { id: 'mixing', label: 'Mixing Order' },
+  { id: 'coco-hybrid', label: 'Coco Hybrid Recipe' },
+];
+
+const relatedInCluster = [
+  { title: 'Living Soil Hawaii', slug: 'living-soil-hawaii' },
+  { title: 'Living Soil vs Coco', slug: 'living-soil-vs-coco' },
+  { title: 'How To Build Living Soil Hawaii', slug: 'how-to-build-living-soil-hawaii' },
+  { title: 'Top Dressing Cannabis', slug: 'top-dressing-cannabis' },
+];
+---
+
+<ArticleLayout
+  title="Living Soil Mix Recipe Hawaii — Ras Truth Style"
+  description="My exact living soil recipe for Hawaii — 4 cu ft peat base, 40% perlite, full mineral stack. Real measurements, real mixing order, real results."
+  silo="Living Soil"
+  siloSlug="living-soil"
+  tags={['Living Soil', 'Soil Recipe', 'Hawaii', 'KNF', 'Cannabis']}
+  date="June 2026"
+  tocItems={tocItems}
+  relatedInCluster={relatedInCluster}
+>
+
+  <p class="lead">This is my living soil base recipe — built around a peat and perlite structure with a full mineral stack and biological layer. Designed for 15–30 gallon containers, KNF-style feeding, and Hawaii's tropical growing conditions. I call it Ras Truth-style because the philosophy comes from that lineage — feed the soil, not the plant.</p>
+
+  <h2 id="overview">The Mix Overview</h2>
+  <p>Total finished volume: approximately 6.6 cubic feet. This fills roughly 3–4 fifteen-gallon containers or 2 thirty-gallon containers. Scale up or down by keeping the ratios.</p>
+
+  <div class="card-grid">
+    <div class="benefit-card">
+      <div class="label">Total Volume</div>
+      <p>~6.6 cu ft finished soil from this recipe.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Perlite Ratio</div>
+      <p>40% of total volume — higher than most recipes. Hawaii humidity means you need drainage.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Use Case</div>
+      <p>15–30 gal containers. KNF feeding or light top dressing. Flower-ready after cooking.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Cook Time</div>
+      <p>2–4 weeks minimum before planting. Longer is better — 4–6 weeks preferred.</p>
+    </div>
+  </div>
+
+  <hr />
+
+  <h2 id="base">Base Structure</h2>
+
+  <h3>Peat Moss — 4.0 cu ft</h3>
+  <p>The structural foundation. Peat provides water retention, cation exchange capacity, and the slightly acidic pH base that cannabis prefers. Use high quality sphagnum peat — not generic potting mix. The quality of your peat determines the quality of your base structure.</p>
+
+  <h3>Coarse Perlite — 2.6 cu ft</h3>
+  <p>40% of total volume. This is higher than most mainland recipes recommend but Hawaii's humidity and heat make drainage critical. Soggy soil in a tropical climate is a fast path to root problems. The coarse perlite keeps the structure open and oxygenated.</p>
+
+  <hr />
+
+  <h2 id="biology">Biology Layer</h2>
+
+  <h3>Earthworm Castings — 1.0 cu ft</h3>
+  <p>The biological engine of the mix. Castings provide beneficial microorganisms, plant-available nutrients, and humic compounds that activate the mineral stack. Use high quality castings — not the cheap bags that are mostly filler. This is not the place to cut corners.</p>
+
+  <h3>High-Quality Compost — 0.5 cu ft</h3>
+  <p>Adds microbial diversity and additional nutrient cycling capacity. Use a compost made from diverse inputs — not just wood chips or a single feedstock. The more diverse the compost the more diverse the biology.</p>
+
+  <hr />
+
+  <h2 id="minerals">Dry Mineral Amendments</h2>
+  <p>All mixed evenly into the peat BEFORE wetting. Dry mixing ensures even distribution throughout the entire soil volume.</p>
+
+  <h3>Calcium / Sulfur / pH Stability</h3>
+  <p>Oyster shell flour: 8 cups. Slow-release calcium that buffers pH and feeds biology over time.</p>
+  <p>Gypsum (calcium sulfate): 6 cups. Fast-acting calcium and sulfur. Improves soil structure and drainage without affecting pH.</p>
+
+  <h3>Magnesium</h3>
+  <p>Epsom salt (magnesium sulfate): 2 cups. Do NOT exceed this amount. Magnesium competes with calcium for uptake — too much magnesium causes calcium deficiency even when calcium is present. 2 cups per 6.6 cu ft is the ceiling.</p>
+
+  <h3>Trace Minerals</h3>
+  <p>Basalt rock dust: 8 cups. Volcanic mineral profile — silicon, iron, trace elements. Slow release over the entire grow cycle.</p>
+  <p>High-quality rock dust (glacial or granite): 8 cups. Broadens the mineral spectrum. Different rock sources provide different mineral profiles — using two types covers more ground.</p>
+
+  <h3>Bio-Stimulants</h3>
+  <p>Kelp meal: 4 cups. Growth hormones, trace minerals, microbial food. Supports biological activity throughout the cook and grow.</p>
+  <p>Crab meal: 4 cups. Chitin — feeds chitin-digesting bacteria that help suppress fungus gnats and root pathogens. Also provides nitrogen, calcium, and magnesium.</p>
+
+  <h3>Soil Chemistry</h3>
+  <p>Humic acid granules: 2 cups. Increases cation exchange capacity — how much nutrition the soil can hold and make available. Critical for a high-mineral mix like this one to actually deliver those minerals to roots.</p>
+
+  <h3>Optional</h3>
+  <p>Mycorrhizal fungi per label — light dusting. Add at transplant directly to the root ball for best results. Some brands mix into soil but root contact is more effective.</p>
+
+  <hr />
+
+  <h2 id="mixing">Mixing Order</h2>
+  <p>Order matters. Follow this sequence exactly.</p>
+
+  <h3>1 — Peat + Perlite Dry</h3>
+  <p>Mix peat and perlite completely dry first. This ensures the perlite is evenly distributed throughout the peat before anything else goes in.</p>
+
+  <h3>2 — Add All Dry Amendments</h3>
+  <p>Add every dry amendment — oyster shell, gypsum, epsom salt, rock dusts, kelp, crab meal, humic acid — and mix thoroughly. You want every cup of finished soil to have the same mineral profile. Take your time here.</p>
+
+  <h3>3 — Add Biology</h3>
+  <p>Add EWC and compost and mix gently. Don't over-mix at this stage — you're incorporating biology not grinding it. Fold it in rather than churning it.</p>
+
+  <h3>4 — Moisten</h3>
+  <p>Moisten slowly with clean water (pH 6.6–6.8) to field capacity. Squeeze test: the soil holds its shape when squeezed but doesn't drip water. If it drips you've gone too far — let it dry slightly before proceeding.</p>
+
+  <h3>5 — Cook</h3>
+  <p>Cover and let the soil rest for 2–4 weeks minimum before planting. 4–6 weeks is better. The cook period allows the biology to activate, the minerals to begin breaking down, and the soil ecosystem to establish before roots enter. Plant too early and you risk nutrient burn from hot biology.</p>
+
+  <div class="hawaii-notes">
+    <p>The 40% perlite ratio is higher than most recipes you'll find online — most suggest 20–30%. In Hawaii I've found that lower perlite ratios lead to waterlogged soil during wet season, especially in larger containers that don't dry out as fast. 40% keeps the structure open and the roots oxygenated even when it's raining every day.</p>
+    <p>I source basalt rock dust locally when possible — Hawaii's volcanic geology means there are local sources if you look. Mixing local volcanic mineral sources with the biology you're cultivating here creates a soil ecosystem that's specifically adapted to this climate. That's the KNF principle in action.</p>
+    <p>Cook time in Hawaii is fast — the heat and humidity accelerate biological activity significantly. I've had soil ready in 2 weeks that would take 4 weeks in a colder climate. But I still wait the full 4 weeks minimum. The difference between 2-week and 4-week cooked soil is visible in how plants establish after transplant.</p>
+    <p>This mix supplies calcium, sulfur, trace minerals, and biology. Liquid inputs during the grow — LAB, FPJ, WCA, CalPhos, silica — are corrective and supplemental, not the primary feeding mechanism. The soil feeds the plant. The liquids fine-tune.</p>
+  </div>
+
+  <div class="related-links">
+    <div class="label">Related Articles</div>
+    <ul>
+      <li><a href="/living-soil/living-soil-hawaii">Living Soil Hawaii</a></li>
+      <li><a href="/knf/knf-hawaii">Korean Natural Farming Hawaii</a></li>
+      <li><a href="/knf/lab-recipe-hawaii">LAB Recipe Hawaii</a></li>
+      <li><a href="/autopot-guide">Complete AutoPot Growing Guide</a></li>
+    </ul>
+  </div>
+
+</ArticleLayout>

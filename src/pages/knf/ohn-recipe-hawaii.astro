@@ -1,0 +1,142 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+
+const tocItems = [
+  { id: 'what-is-ohn', label: 'What Is OHN?' },
+  { id: 'ingredients', label: 'Ingredients' },
+  { id: 'process', label: 'The Process' },
+  { id: 'application', label: 'How To Apply' },
+  { id: 'why-each', label: 'Why Each Ingredient' },
+];
+
+const relatedInCluster = [
+  { title: 'KNF Hawaii', slug: 'knf-hawaii' },
+  { title: 'LAB Recipe Hawaii', slug: 'lab-recipe-hawaii' },
+  { title: 'FPJ Recipe Hawaii', slug: 'fpj-recipe-hawaii' },
+  { title: 'KNF For Cannabis', slug: 'knf-for-cannabis' },
+];
+---
+
+<ArticleLayout
+  title="OHN Recipe Hawaii — Oriental Herbal Nutrient"
+  description="My exact OHN recipe using garlic, ginger, turmeric, and cinnamon. Real ratios, alcohol extraction process, and application rates from an Oahu garden."
+  silo="KNF"
+  siloSlug="knf"
+  tags={['KNF', 'OHN', 'Oriental Herbal Nutrient', 'Hawaii', 'IPM']}
+  date="June 2026"
+  tocItems={tocItems}
+  relatedInCluster={relatedInCluster}
+>
+
+  <p class="lead">OHN is the KNF input that changed how my outdoor plants handle pest and disease pressure. Four ingredients, alcohol extraction, brown sugar preservation. This is my version — turmeric instead of the traditional angelica root, because turmeric grows here and angelica doesn't.</p>
+
+  <h2 id="what-is-ohn">What Is OHN?</h2>
+  <p>Oriental Herbal Nutrient is a fermented herbal extract that provides a broad spectrum of bioactive compounds — sulfur, antimicrobials, antifungals, antioxidants, and plant immune stimulants. In traditional KNF it's made from five herbs including angelica root and licorice. My version uses what's accessible in Hawaii and what I've found works in my garden.</p>
+  <p>OHN supports plant immunity, helps suppress fungal and bacterial pathogens, stimulates root vigor, and improves stress recovery. It works best as a regular preventative rather than a reactive treatment — I apply it before problems appear, not after.</p>
+
+  <hr />
+
+  <h2 id="ingredients">Ingredients</h2>
+
+  <div class="card-grid">
+    <div class="benefit-card">
+      <div class="label">Garlic</div>
+      <p>250g. Sulfur compounds, antimicrobial support, plant immune stimulation.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Ginger</div>
+      <p>250g. Root vigor, microbial stimulation, stress recovery support.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Turmeric</div>
+      <p>250g. Antioxidants, antimicrobial properties, rhizosphere support.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Cinnamon</div>
+      <p>250g. Antifungal properties, root-zone support, suppresses unwanted microbes.</p>
+    </div>
+  </div>
+
+  <p>Total herbs: 1000g equal parts by weight.</p>
+
+  <h3>Alcohol</h3>
+  <p>Vodka, soju, or any 35–40% alcohol. You need enough to completely cover the herb material. Ratio: 1 part herbs to 1–2 parts alcohol. For 1000g herbs use 1000–2000 mL alcohol.</p>
+
+  <h3>Preservative</h3>
+  <p>Organic brown sugar — 1 part sugar to 1 part finished extract for storage.</p>
+
+  <hr />
+
+  <h2 id="process">The Process</h2>
+
+  <h3>Step 1 — Prep</h3>
+  <p>Finely chop, grate, or blend each ingredient separately. You want maximum surface area for the alcohol to extract from. Garlic and ginger grate well. Turmeric can be blended. Cinnamon — use ground cinnamon or break sticks into small pieces.</p>
+
+  <h3>Step 2 — Alcohol Extraction</h3>
+  <p>Place all herbs into a glass jar. Add alcohol until everything is completely submerged — no dry material exposed above the liquid line. Seal the jar and store in a cool dark place. Shake daily. Extract for minimum 7–14 days, 30 days preferred. The longer the extraction the more complete the draw.</p>
+
+  <h3>Step 3 — Strain</h3>
+  <p>Strain out all solids through cheesecloth or a fine strainer. Press the herb material to extract as much liquid as possible. Keep only the liquid extract — discard the spent herbs.</p>
+
+  <h3>Step 4 — Stabilize</h3>
+  <p>Mix 1 part herbal extract with 1 part organic brown sugar. Example: 1000 mL extract + 1000g brown sugar. Stir until fully dissolved. Store in sealed glass containers away from heat and sunlight. Shake before each use.</p>
+
+  <hr />
+
+  <h2 id="application">How To Apply</h2>
+
+  <div class="card-grid">
+    <div class="benefit-card">
+      <div class="label">Foliar Spray</div>
+      <p>1–2 mL per liter. Apply at lights off or early morning outdoors. Never in direct sun.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Root Drench</div>
+      <p>1–2 mL per liter. Apply to root zone for systemic immune support.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">IPM / Stress</div>
+      <p>2–5 mL per liter when dealing with active pest or disease pressure.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Compost Tea</div>
+      <p>5–10 mL per gallon. Add to actively aerated tea to boost biological activity.</p>
+    </div>
+  </div>
+
+  <p>Best combined with LAB, FPJ, and a yucca/ThermX surfactant for foliar applications. Start at 1 mL/L and increase only if plants respond well. Always shake before use.</p>
+
+  <hr />
+
+  <h2 id="why-each">Why Each Ingredient</h2>
+
+  <h3>Garlic</h3>
+  <p>The core of OHN's antimicrobial action. Allicin and other sulfur compounds in garlic have well-documented antimicrobial and antifungal properties. In the garden, garlic extract supports plant immune response and helps suppress surface pathogens on leaves and in the root zone.</p>
+
+  <h3>Ginger</h3>
+  <p>Gingerols and shogaols in ginger stimulate root development and microbial activity in the rhizosphere. It's particularly useful for stress recovery — plants coming out of heat stress, transplant stress, or environmental swings respond well to ginger-based inputs.</p>
+
+  <h3>Turmeric</h3>
+  <p>Curcumin gives turmeric its antioxidant and antimicrobial properties. In KNF practice it supports the rhizosphere and helps create an environment where beneficial biology thrives over pathogenic biology. I substituted turmeric for angelica root because turmeric is widely available in Hawaii and the antioxidant profile is strong.</p>
+
+  <h3>Cinnamon</h3>
+  <p>Cinnamaldehyde has well-documented antifungal properties. In the root zone it helps suppress unwanted fungal organisms while not disrupting beneficial mycorrhizal networks when used at appropriate dilutions. Also useful as a standalone root powder for cuttings.</p>
+
+  <div class="hawaii-notes">
+    <p>I use fresh turmeric from the farmers market when I can get it — Hawaii grows excellent turmeric and the fresh root has a much higher curcumin content than dried powder. When fresh isn't available I use organic turmeric powder. Either works but fresh is noticeably more pungent after extraction.</p>
+    <p>The 30-day extraction makes a significant difference. I made a 14-day batch side by side with a 30-day batch using the same ingredients — the 30-day extract was noticeably darker, more aromatic, and seemed to have stronger effect on pest pressure. Worth the wait.</p>
+    <p>Hawaii's heat means the extraction happens faster than in colder climates. I store mine in a cabinet that stays around 75–78°F. Shake it every morning when I'm making my coffee. By day 21 the color is deep amber and the smell is intense. That's when I know it's ready.</p>
+    <p>I apply OHN as a foliar every 7–10 days on outdoor plants during pest pressure season — May through October when thrips, aphids, and spider mites are most active here. Preventative schedule, not reactive. By the time you see damage it's harder to reverse.</p>
+  </div>
+
+  <div class="related-links">
+    <div class="label">KNF Articles</div>
+    <ul>
+      <li><a href="/knf/knf-hawaii">Korean Natural Farming Hawaii</a></li>
+      <li><a href="/knf/lab-recipe-hawaii">LAB Recipe Hawaii</a></li>
+      <li><a href="/knf/fpj-recipe-hawaii">FPJ Recipe Hawaii</a></li>
+      <li><a href="/autopot-guide">Complete AutoPot Growing Guide</a></li>
+    </ul>
+  </div>
+
+</ArticleLayout>

@@ -1,0 +1,131 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+
+const tocItems = [
+  { id: 'what-is-wca', label: 'What Is WCA?' },
+  { id: 'ingredients', label: 'Ingredients' },
+  { id: 'process', label: 'The Process' },
+  { id: 'calphos', label: 'CalPhos — Bone Version' },
+  { id: 'application', label: 'How To Apply' },
+];
+
+const relatedInCluster = [
+  { title: 'KNF Hawaii', slug: 'knf-hawaii' },
+  { title: 'LAB Recipe Hawaii', slug: 'lab-recipe-hawaii' },
+  { title: 'OHN Recipe Hawaii', slug: 'ohn-recipe-hawaii' },
+  { title: 'FPJ Recipe Hawaii', slug: 'fpj-recipe-hawaii' },
+];
+---
+
+<ArticleLayout
+  title="WCA Recipe Hawaii — Water Soluble Calcium"
+  description="My exact WCA and CalPhos recipes — roasted eggshell and bone in brown rice vinegar. Real ratios and application rates for cannabis in Hawaii."
+  silo="KNF"
+  siloSlug="knf"
+  tags={['KNF', 'WCA', 'CalPhos', 'Calcium', 'Hawaii']}
+  date="June 2026"
+  tocItems={tocItems}
+  relatedInCluster={relatedInCluster}
+>
+
+  <p class="lead">WCA and CalPhos are how KNF delivers calcium and phosphorus in a form plants can actually use. Roasting the source material first is what makes it work — heat converts the mineral compounds into a form that brown rice vinegar can extract into a bioavailable liquid.</p>
+
+  <h2 id="what-is-wca">What Is WCA?</h2>
+  <p>Water-Soluble Calcium is made by dissolving roasted eggshells in brown rice vinegar. The acetic acid in the vinegar reacts with the calcium carbonate in the shells to create calcium acetate — a highly bioavailable form of calcium that plants can absorb directly through leaves and roots.</p>
+  <p>Calcium is critical for cannabis at multiple stages — cell wall development, structural integrity, disease resistance, and flower formation. WCA delivers it in a form that bypasses the soil chemistry problems that can lock out calcium from conventional sources.</p>
+
+  <hr />
+
+  <h2 id="ingredients">Ingredients — WCA</h2>
+
+  <div class="card-grid">
+    <div class="benefit-card">
+      <div class="label">Eggshells</div>
+      <p>Clean shells from any eggs. Remove the inner membrane if possible — it can cause off smells during extraction.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Brown Rice Vinegar</div>
+      <p>Specifically brown rice vinegar — the acidity profile matters. Regular white vinegar works but brown rice vinegar is the traditional KNF choice.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Ratio</div>
+      <p>1 part roasted eggshell to 10 parts vinegar by volume.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Container</div>
+      <p>Glass jar with a loose lid — the reaction produces CO2 gas that needs to escape.</p>
+    </div>
+  </div>
+
+  <hr />
+
+  <h2 id="process">The Process — WCA</h2>
+
+  <h3>Step 1 — Clean and Dry</h3>
+  <p>Rinse eggshells thoroughly. Remove the inner membrane if possible — it doesn't affect the calcium extraction but can add unwanted compounds to the final product. Let shells dry completely.</p>
+
+  <h3>Step 2 — Roast</h3>
+  <p>Roast in the oven or dry pan until light brown, brittle, and slightly toasted smelling. Do not burn black — you want the calcium carbonate converted but not destroyed. A light brown color is correct. This usually takes 15–20 minutes at 350–400°F in the oven.</p>
+
+  <h3>Step 3 — Fill Jar</h3>
+  <p>Fill glass jar roughly 1/3 to 1/2 full with the roasted shells. Don't pack tight — you need room for the vinegar and the reaction.</p>
+
+  <h3>Step 4 — Add Vinegar</h3>
+  <p>Slowly pour brown rice vinegar over the shells. Add slowly — the mixture foams heavily as the acid reacts with the calcium carbonate. This is normal. The CO2 bubbling is the reaction working.</p>
+  <p>Ratio: 1 part roasted eggshell to 10 parts vinegar.</p>
+
+  <h3>Step 5 — Wait</h3>
+  <p>Leave the lid loose for several days while bubbling is active. Once bubbling stops the reaction is complete. Total time: approximately 7–14 days. Strain and bottle. The liquid is your WCA.</p>
+
+  <hr />
+
+  <h2 id="calphos">CalPhos — Bone Version</h2>
+  <p>CalPhos (Water-Soluble Calcium Phosphate) follows the same process but uses roasted bones instead of eggshells. Bones provide both calcium AND phosphorus — making CalPhos particularly useful for transition to flower and through bloom when phosphorus demand increases.</p>
+
+  <h3>Ingredients</h3>
+  <p>Beef/steak bones and chicken bones. Clean thoroughly — remove all meat and fat before roasting. Mix of both bone types gives a broader mineral profile.</p>
+
+  <h3>Process Differences</h3>
+  <p>Roast at high temperature until dark brown and very brittle — nearly charred but not reduced to ash. Bones need more heat than eggshells to break down the mineral matrix. Crush roasted bones into small pieces before adding to the jar. Extraction takes longer — allow 2–4 weeks for full extraction. Everything else is the same as WCA.</p>
+
+  <hr />
+
+  <h2 id="application">How To Apply</h2>
+
+  <div class="card-grid">
+    <div class="benefit-card">
+      <div class="label">WCA — Veg</div>
+      <p>0.5–1 mL per liter. Supports cell wall development and structural growth.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">WCA — Flower</div>
+      <p>1–2 mL per liter. Increased calcium demand during bud development.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">CalPhos — Transition</div>
+      <p>1–2 mL per liter. Apply at flip and through early flower for phosphorus support.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">CalPhos — Flower</div>
+      <p>2–5 mL per liter. Higher rates through mid to late flower for density and root development.</p>
+    </div>
+  </div>
+
+  <div class="hawaii-notes">
+    <p>I save eggshells in a container on the counter and roast a batch every few weeks. Hawaii's humidity means the shells can get soft if you leave them sitting too long before roasting — store them somewhere dry or roast shortly after collecting. A damp eggshell takes longer to get brittle in the oven.</p>
+    <p>For CalPhos I save bones from cooking — steak bones, chicken carcasses, whatever comes through the kitchen. Roast them on a sheet pan at 450°F until dark brown. The smell is intense. Do it with ventilation or outside if you can. Let them cool completely before crushing — hot bones are harder to break down.</p>
+    <p>WCA is the input I reach for first when I see any calcium deficiency symptoms — tip burn, brown leaf edges, slow development. A 1 mL/L foliar application usually shows response within a few days. Much faster than adjusting soil calcium which takes weeks to work through the system.</p>
+  </div>
+
+  <div class="related-links">
+    <div class="label">KNF Articles</div>
+    <ul>
+      <li><a href="/knf/knf-hawaii">Korean Natural Farming Hawaii</a></li>
+      <li><a href="/knf/lab-recipe-hawaii">LAB Recipe Hawaii</a></li>
+      <li><a href="/knf/ohn-recipe-hawaii">OHN Recipe Hawaii</a></li>
+      <li><a href="/knf/fpj-recipe-hawaii">FPJ Recipe Hawaii</a></li>
+      <li><a href="/autopot-guide">Complete AutoPot Growing Guide</a></li>
+    </ul>
+  </div>
+
+</ArticleLayout>

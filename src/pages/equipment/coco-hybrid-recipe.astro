@@ -1,0 +1,119 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+
+const tocItems = [
+  { id: 'what-is-it', label: 'What Is The Coco Hybrid?' },
+  { id: 'recipe', label: 'The Recipe' },
+  { id: 'amendments', label: 'Base Amendments' },
+  { id: 'feeding', label: 'Feeding Strategy' },
+  { id: 'vs-pure-coco', label: 'vs Pure Coco' },
+];
+
+const relatedInCluster = [
+  { title: 'How To Buffer Coco', slug: 'how-to-buffer-coco' },
+  { title: 'AutoPot pH Problems', slug: 'autopot-ph-problems' },
+  { title: 'Pumice vs Perlite', slug: 'pumice-vs-perlite' },
+  { title: 'Cannabis Cloning Guide', slug: 'cannabis-cloning-guide' },
+];
+---
+
+<ArticleLayout
+  title="Coco Hybrid Recipe — Amended Coco For Cannabis"
+  description="My exact coco hybrid mix — buffered coco, perlite, compost, EWC, and a base amendment layer. The bridge between pure coco and living soil."
+  silo="Equipment & Tools"
+  siloSlug="equipment"
+  tags={['Coco', 'Living Soil', 'Hybrid', 'AutoPots', 'Hawaii']}
+  date="June 2026"
+  tocItems={tocItems}
+  relatedInCluster={relatedInCluster}
+>
+
+  <p class="lead">Pure coco gives you maximum control. Living soil gives you biology and self-sufficiency. The coco hybrid sits between them — buffered coco as the base with enough biology and mineral amendment to reduce feeding frequency and build root zone health without losing the drainage and oxygen profile that makes coco work so well in AutoPots.</p>
+
+  <h2 id="what-is-it">What Is The Coco Hybrid?</h2>
+  <p>This is my go-to mix for plants that start in coco indoors and eventually transition to outdoor living soil. The amended coco builds a richer root zone than pure coco, helps plants develop the biological relationships they'll need in outdoor soil, and reduces the precision feeding demand of a pure hydroponic coco system.</p>
+  <p>It's not a replacement for pure coco in AutoPots where you want full control — it's a bridge medium for plants being prepared for outdoor environments, or for growers who want some biological buffering without going full living soil.</p>
+
+  <hr />
+
+  <h2 id="recipe">The Recipe — Per 5-Gallon Pot</h2>
+
+  <div class="card-grid">
+    <div class="benefit-card">
+      <div class="label">Buffered Coco — 3 gal</div>
+      <p>Properly buffered with cal-mag before use. The structural base of the mix.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Perlite — 1 gal</div>
+      <p>20% by volume. Drainage and root zone oxygen. Use coarse grade.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Compost — 0.5 gal</div>
+      <p>High quality diverse compost. Adds biology and nutrient cycling capacity.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Earthworm Castings — 0.5 gal</div>
+      <p>Biological activator and plant-available nutrition. Don't skimp here.</p>
+    </div>
+  </div>
+
+  <hr />
+
+  <h2 id="amendments">Base Amendments — Per 5-Gallon Pot</h2>
+
+  <div class="card-grid">
+    <div class="benefit-card">
+      <div class="label">Gypsum — 2 tbsp</div>
+      <p>Calcium and sulfur. Improves drainage, adds fast-acting calcium.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Oyster Shell — 2 tbsp</div>
+      <p>Slow-release calcium. pH buffer. Feeds biology over time.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">Living Amendments Mix — 5 tbsp</div>
+      <p>1 tbsp per gallon of container volume mixed evenly into the full soil volume.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="label">pH Target</div>
+      <p>Water at 6.2–6.5 for this mix. Slightly higher than pure coco due to biology present.</p>
+    </div>
+  </div>
+
+  <hr />
+
+  <h2 id="feeding">Feeding Strategy</h2>
+  <p>This mix is not self-sufficient like a full living soil build — it needs feeding. But the biology and amendment base significantly reduces how much liquid feeding is required compared to pure coco.</p>
+
+  <h3>EC Range</h3>
+  <p>Start at 1.0–1.2 EC (500–600 PPM on 500 scale) from transplant. The amendments handle some baseline nutrition — you're supplementing, not fully supplying. Watch the plants and adjust. If they're dark green and vigorous, back off. If they're light green and slow, push the EC up.</p>
+
+  <h3>KNF Inputs</h3>
+  <p>This mix responds well to LAB drenches — the biology in the compost and EWC gives the LAB organisms something to work with. Regular LAB at 2 mL/L every 1–2 weeks supports root zone health significantly in this medium.</p>
+
+  <h3>Top Dressing</h3>
+  <p>Apply living amendments mix at 1 tbsp per gallon every 2–3 weeks through veg. Reduce or stop in flower and rely on liquid inputs for the final push.</p>
+
+  <hr />
+
+  <h2 id="vs-pure-coco">vs Pure Coco</h2>
+  <p>Pure coco in AutoPots gives you precision — every nutrient the plant gets comes from your reservoir, EC and pH are fully controlled, and the medium itself is essentially inert. Maximum control, maximum consistency.</p>
+  <p>This hybrid gives you more biological resilience and requires less precise feeding management, but you give up some of that control. pH targets are slightly different, EC response is less predictable, and the biology means you can't fully flush the medium the way you can with pure coco.</p>
+  <p>The right choice depends on your goal. Pure coco for indoor AutoPot grows where precision matters. Coco hybrid for plants being developed for outdoor transition or growers who want biological input without building a full living soil system.</p>
+
+  <div class="hawaii-notes">
+    <p>I use this mix specifically for clones being prepared for outdoor transition. They come out of the EZ Clone into this mix in 1–2 gallon pots, veg for 2–4 weeks building a root ball, then move to outdoor living soil containers. The biology they develop in this mix helps them establish faster in outdoor soil than clones coming from pure coco.</p>
+    <p>The Koolau Farmers local potting mix works well as the compost component here — it's locally produced, has decent biology, and is available across Oahu. I mix it 50/50 with EWC to get the compost and casting volumes I want without buying two separate products.</p>
+    <p>Water pH for this mix is 6.2–6.5 — slightly higher than the 5.8–6.0 I run in pure coco. The biology in the compost and castings buffers the pH somewhat and the amendments release better at slightly higher pH. If you try to run this mix at 5.8 you'll fight pH instability.</p>
+  </div>
+
+  <div class="related-links">
+    <div class="label">AutoPot Guide</div>
+    <ul>
+      <li><a href="/autopot-guide">← Back To The Complete AutoPot Growing Guide</a></li>
+      <li><a href="/equipment/how-to-buffer-coco">How To Buffer Coco</a></li>
+      <li><a href="/living-soil/living-soil-mix-recipe-hawaii">Living Soil Base Recipe</a></li>
+    </ul>
+  </div>
+
+</ArticleLayout>
