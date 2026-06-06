@@ -82,7 +82,7 @@ import BaseLayout from './BaseLayout.astro';
 
 </BaseLayout>
 
-<script>
+<script is:inline>
 async function submitEmail(inputId, msgId) {
   const input = document.getElementById(inputId);
   const msg = document.getElementById(msgId);
